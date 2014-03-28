@@ -1,1 +1,3 @@
 03-27-2014, "Added some initialization stuff to the Repository looked at some energy examples in NS3 and configured some programs", 1.5
+03-27-2014, "Created a consumption model using packet injection based on example in the same folder it is essentially the same except that it runs for 100.0 seconds sends a packet every 0.01 seconds and prints and error and exits if the power remaining is not large enough to receive another packet", .75
+
