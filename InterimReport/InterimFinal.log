@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  1 APR 2014 11:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  1 APR 2014 11:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -133,7 +133,7 @@ No file InterimFinal.bbl.
 Here is how much of TeX's memory you used:
  960 strings out of 493315
  16841 string characters out of 6137904
- 73686 words of memory out of 5000000
+ 72686 words of memory out of 5000000
  4451 multiletter control sequences out of 15000+600000
  36899 words of font info for 70 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -146,7 +146,7 @@ mr12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 /local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/te
 xlive/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013
 /texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on InterimFinal.pdf (3 pages, 79799 bytes).
+Output written on InterimFinal.pdf (3 pages, 81340 bytes).
 PDF statistics:
  43 PDF objects out of 1000 (max. 8388607)
  30 compressed objects within 1 object stream

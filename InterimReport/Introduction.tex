@@ -1,12 +1,60 @@
-1. Introduction
-a. Previous Work
-	Wireless Sensor Networks(WSN) are being used in a variety of exciting applications. The UUTE project{4561146} will provide more independence and mobility to the elderly and recovering patients by using wearable wireless sensors to monitor their health. But many WSN applications depend on a limited battery as a source of energy.  Using power effectively is important in keeping the WSN functional and cost efficient. In{6558065},Manju identifies the activities which waste battery power the most in a WSN node.  A node wastes energy when the packet it sends becomes corrupt due to a collision, and retransmissions are required since error correcting codes, which use additional power, are not often used {4476299}. Also, overheating is when a node is needlessly awakened from sleep mode when it intercepts a transmission that was meant for a different node.  Misuse of control packet {6558065} can also drain power by keeping a node listening, until a timeout occurs, for packets that will never arrive or by causing the a node to needlessly transmit responses.
-	An attacker could take advantage of these power wasting scenarios and force them to happen more often than they normal would.  Any attacks that causes these effects for long periods of time are considered Denial-of-Sleep {4476299} attacks because a node is being forced to use up power to performing meaningless tasks instead of switching to a power-conserving sleep mode.
- These previously mention battery draining scenarios all occur in the MAC layer, but Vasserman and Hopper{6112758} brings up that attackers could achieve the same goal in the network layer by forcing the packets to take the longest path possible to reach its destination or worse: route the packets in an endless loop, which is called a carousel attack.  Vasserman also explains that attacker nodes on a wireless ad-hoc network, such as a WSN, typically try to use as few transmissions as possible while maximizing the wasted power consumption of victim nodes. Instead of blasting control packets at a high rate, attacker nodes smartly send transmission to avoid being identified as malicious by nearby nodes.
+\section{Introduction}
+\subsection{Previous Work}
+Wireless Sensor Networks(WSN) are being used in a variety of exciting 
+applications. The UUTE project{4561146} will provide more independence 
+and mobility to the elderly and recovering patients by using wearable 
+wireless sensors to monitor their health. But many WSN applications 
+depend on a limited battery as a source of energy.  Using power 
+effectively is important in keeping the WSN functional and cost efficient.
+ In{6558065},Manju identifies the activities which waste battery power 
+the most in a WSN node.  A node wastes energy when the packet it sends 
+becomes corrupt due to a collision, and retransmissions are required 
+since error correcting codes, which use additional power, are not 
+often used {4476299}. Also, overheating is when a node is needlessly 
+awakened from sleep mode when it intercepts a transmission that was 
+meant for a different node.  Misuse of control packet {6558065} can 
+also drain power by keeping a node listening, until a timeout occurs, 
+for packets that will never arrive or by causing the a node to needlessly 
+transmit responses.
+	
 
-b. Paper Content
-In this paper, we will be simulating several simple wireless sensor node attacks in order to figure out methods of protecting against such attacks. First we will establish what resources and what information  the attacker will have for each simulation. Then we will explain the details of the scenario we are simulating, including the type and the size of battery  used by the node. We will also describe how the simulation is set up, as well as the assumptions we took while designing them. With the framework of the simulation establish, we will analyze the patterns and implication of the collected data. Then we will use the data analysis to support our proposal for countermeasures against power consumption attacks.
+An attacker could take advantage of these power wasting scenarios and 
+force them to happen more often than they normal would.  Any attacks 
+that causes these effects for long periods of time are considered 
+Denial-of-Sleep {4476299} attacks because a node is being forced to 
+use up power to performing meaningless tasks instead of switching to 
+a power-conserving sleep mode. These previously mentioned battery draining
+ scenarios all occur in the MAC layer, but Vasserman and Hopper{6112758} 
+bring up the point that attackers could achieve the same goal in the 
+network layer by forcing the packets to take the longest path possible 
+to reach its destination, or worse: route the packets in an endless loop, 
+which is called a carousel attack.  Vasserman also explains that attacker 
+nodes on a wireless ad-hoc network, such as a WSN, typically try to use 
+as few transmissions as possible while maximizing the wasted power 
+consumption of victim nodes. Instead of blasting control packets at a 
+high rate, attacker nodes smartly send transmission to avoid being 
+identified as malicious by nearby nodes.
 
-c. Goal
-The goal of this simulation is to gain an understanding of the effects of power consumption attacks on WSN nodes. We will be able to understand the weaknesses and limitations the sensor nodes, and we can use this insight to figure out mitigation techniques that could potentially be put into practice. Also we want to be able to recommend certain design choices, such as battery type, when manufacturing WSN nodes.
+\subsection{Contents}
+In this paper, we will be simulating several simple wireless sensor node 
+attacks in order to figure out methods of protecting against such attacks.
+ First we will establish what resources and what information  
+the attacker will have for each simulation. Then we will explain the 
+details of the scenario we are simulating, including the type and the 
+size of battery  used by the node, and the size of the packets that 
+will be transmitted. We will also describe how the simulation is set up, 
+as well as the assumptions we took while designing them. 
+With the framework of the simulation established, we will analyze the 
+patterns and implications of the collected data. Then we will use the 
+data analysis to support our proposal for countermeasures against power 
+consumption attacks.
+
+\subsection{Goal}
+The goal of this simulation is to gain an understanding of the 
+effects of power consumption attacks on WSN nodes. We will be able 
+to understand the weaknesses and limitations the sensor nodes, and 
+we can use this insight to figure out mitigation techniques that 
+could potentially be put into practice. Also we want to be able to 
+recommend certain design choices, such as battery type, when 
+manufacturing WSN nodes.
 
