@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  1 APR 2014 11:43
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  1 APR 2014 13:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -87,7 +87,39 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \@IEEEtmpitemindent=\dimen116
 \c@IEEEbiography=\count91
 \@IEEEtranrubishbin=\box26
-) (./InterimFinal.aux)
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count92
+))
+\Gin@req@height=\dimen117
+\Gin@req@width=\dimen118
+)
+(./InterimFinal.aux)
 \openout1 = `InterimFinal.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -102,10 +134,71 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
- (./title.tex
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 4.
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/omsptm.fd
+(/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count93
+\scratchdimen=\dimen119
+\scratchbox=\box27
+\nofMPsegments=\count94
+\nofMParguments=\count95
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count96
+\MPscratchDim=\dimen120
+\MPnumerator=\count97
+\makeMPintoPDFobject=\count98
+\everyMPtoPDFconversion=\toks17
+) (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+(./title.tex
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 4.
+ (/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
@@ -126,30 +219,96 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ap/pdftex.map}
 
 
-]) (./Methodology.tex)
-(./ResultsAndAnalysis.tex [2]) (./Conclusion.tex)
-No file InterimFinal.bbl.
-[3] (./InterimFinal.aux) ) 
+]) (./Methodology.tex
+<Figures/AModel1.png, id=11, 659.1024pt x 429.2838pt>
+File: Figures/AModel1.png Graphic file (type png)
+
+<use Figures/AModel1.png>
+Package pdftex.def Info: Figures/AModel1.png used on input line 12.
+(pdftex.def)             Requested size: 252.0pt x 164.13173pt.
+
+<Figures/AModel2.png, id=13, 653.3208pt x 424.4658pt>
+File: Figures/AModel2.png Graphic file (type png)
+
+<use Figures/AModel2.png>
+Package pdftex.def Info: Figures/AModel2.png used on input line 21.
+(pdftex.def)             Requested size: 252.0pt x 163.72101pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./ResultsAndAnalysis.tex [2 <./Figures/AModel1.png>] [3 <./Figures/AModel2.p
+ng>] <Figures/BatteryDeplition/ALLibat.pdf, id=22, 505.89pt x 505.89pt>
+File: Figures/BatteryDeplition/ALLibat.pdf Graphic file (type pdf)
+
+<use Figures/BatteryDeplition/ALLibat.pdf>
+Package pdftex.def Info: Figures/BatteryDeplition/ALLibat.pdf used on input lin
+e 43.
+(pdftex.def)             Requested size: 252.0pt x 252.00262pt.
+
+<Figures/BatteryDepletionPackets/Log/ALLiBATpkt.pdf, id=23, 505.89pt x 505.89pt
+>
+File: Figures/BatteryDepletionPackets/Log/ALLiBATpkt.pdf Graphic file (type pdf
+)
+ <use Figures/BatteryDepletionPackets/Log/ALLiBATpkt.pdf>
+Package pdftex.def Info: Figures/BatteryDepletionPackets/Log/ALLiBATpkt.pdf use
+d on input line 50.
+(pdftex.def)             Requested size: 252.0pt x 252.00262pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/BatteryDeplition/nonlog/ALLiBATnonl.pdf, id=24, 505.89pt x 505.89pt>
+File: Figures/BatteryDeplition/nonlog/ALLiBATnonl.pdf Graphic file (type pdf)
+
+<use Figures/BatteryDeplition/nonlog/ALLiBATnonl.pdf>
+Package pdftex.def Info: Figures/BatteryDeplition/nonlog/ALLiBATnonl.pdf used o
+n input line 59.
+(pdftex.def)             Requested size: 252.0pt x 252.00262pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+<Figures/BatteryDepletionPackets/NonLog/ALLiBATpktnonl.pdf, id=25, 505.89pt x 5
+05.89pt>
+File: Figures/BatteryDepletionPackets/NonLog/ALLiBATpktnonl.pdf Graphic file (t
+ype pdf)
+ <use Figures/BatteryDepletionPackets/NonLog/ALLiBATpktnonl.pdf>
+Package pdftex.def Info: Figures/BatteryDepletionPackets/NonLog/ALLiBATpktnonl.
+pdf used on input line 66.
+(pdftex.def)             Requested size: 252.0pt x 252.00262pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 1320) has occurred while \output is active []
+
+ [4 <./Figures/BatteryDeplition/ALLibat.pdf> <./Figures/BatteryDepletionPackets
+/Log/ALLiBATpkt.pdf> <./Figures/BatteryDeplition/nonlog/ALLiBATnonl.pdf>])
+(./Conclusion.tex) (./InterimFinal.bbl) [5 <./Figures/BatteryDepletionPackets/N
+onLog/ALLiBATpktnonl.pdf>] (./InterimFinal.aux) ) 
 Here is how much of TeX's memory you used:
- 960 strings out of 493315
- 16841 string characters out of 6137904
- 72686 words of memory out of 5000000
- 4451 multiletter control sequences out of 15000+600000
- 36899 words of font info for 70 fonts, out of 8000000 for 9000
+ 2265 strings out of 493315
+ 37205 string characters out of 6137904
+ 98832 words of memory out of 5000000
+ 5676 multiletter control sequences out of 15000+600000
+ 39113 words of font info for 72 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 26i,5n,19p,1873b,201s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/b
-ase/8r.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr
-/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/te
-xlive/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013
-/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on InterimFinal.pdf (3 pages, 81340 bytes).
+ 37i,5n,23p,1176b,208s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2013/texmf
+-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2013/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw
+/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utm
+bi8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
+/usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on InterimFinal.pdf (5 pages, 500208 bytes).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
+ 82 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
