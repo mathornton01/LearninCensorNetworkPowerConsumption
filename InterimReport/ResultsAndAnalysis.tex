@@ -1,10 +1,37 @@
 \section{Results and Analysis}
 
 \subsection{Simulation Details and Result gathering}
-It is worth reiterating over and over again that the key premise investigated in this project up to this point is the simply energy consumption attack on a specific node that uses the wifi radio protocols. As of yet we have not adapted our model to make use of the existing WSN protocols
-Such as LEACH, ZIGBEE, or other WPAN protocols {Citation necessary}. Because of the limited nature of the NS3 simulation tool that has been used to simulate the power consumption attack, we are looking at problems with adapting any type of IEEE WPAN protocol, and are considering the use of a different simulation tool in our future efforts. 
-t
+It is worth reiterating over and over again that the key premise investigated in this project up to this point is the simply 
+energy consumption attack on a specific node that uses the wifi radio protocols. As of yet we have not adapted our model to 
+make use of the existing WSN protocols such as LEACH, ZIGBEE, or other WPAN protocols {Citation necessary}. Because of the 
+limited nature of the NS3 simulation tool that has been used to simulate the power consumption attack, we are looking at 
+problems with adapting any type of IEEE WPAN protocol, and are considering the use of a different simulation tool in our future efforts. 
 
-Several factors were investigated by the initial simulation of a Power Consumption attack on WiFi radio (WiFi radios are used in the simulation in order to estimate Tx Current and Rx Current and because they are similar to WSN communications). As mentioned in the set up section of our methodology, we used an attack that caused the target node to receive a lot of communication in a short amount of time (1 packet/ 10 ms). The primary advantage of our simulation is that we can manipulate the initial energy supply of the target node. We simulate the initial energy supply based on a few factors, first: what is the internal acid of the battery, second: what is the weight of the battery, third: the potential difference of the battery is assumed to be a constant 3.6 Volts. the information used in these calculations was taken from {citation necessary}.
 
-We ran the simulation multiple times varying the size of the packet transmitted, and the 
+Several factors were investigated by the initial simulation of a Power Consumption attack on WiFi radio 
+(WiFi radios are used in the simulation in order to estimate Tx Current and Rx Current and because they are similar to WSN communications).
+ As mentioned in the set up section of our methodology, we used an attack that caused the target node to receive a lot of communication 
+in a short amount of time (1 packet/ 10 ms). The primary advantage of our simulation is that we can manipulate the initial energy 
+supply of the target node. We simulate the initial energy supply based on a few factors, first: what is the internal acid of the 
+battery, second: what is the weight of the battery, third: the potential difference of the battery is assumed to be a constant 3.6 Volts. 
+the information used in these calculations was taken from {citation necessary}.
+
+We ran the simulation multiple times varying the size of the packet transmitted, and the parameters of the initial energy source. The 
+results of the simulation were not extremely surprising, but necessary to begin an analysis of attacks on WSN nodes. It is also worth
+noting before we proceede that the packet sizes were varried in powers of two (as they likely would be). 
+
+\subsection{Analysis}
+The network simulation was done in NS3, and was based on an example entitled "energy-power-model.cc" included in the standard distribution.
+We do not take credit for the full simulation, but instead would like to thank the authors of the original code that we modified, 
+Sidharth Nabar and He Wu. The main modification to the original example included an increase in the rate of the number of packets 
+transmitted from 1 every 10 seconds to 1 every 10 miliseconds. In our methodology section we explain that the attacker is assumed to have
+unlimited transmission capabilities, thus this increase in speed is justified. Another modification was made by allowing the initial energy
+of the power supply (in Joules) to be called from the commandline. This modification allowed for easy iterative manipulation of the 
+essential arguments for our research. 
+
+In addition we wrote a script that, given the weight and acid-type of a battery, would output the estimated energy contained within for
+a standard cell battery of 3.6 Volts. The constants needed for this estimation were taken from {citation needed}. Finally a script that 
+ran the simulation for battery weights that ranged from .1 mg to 1 mg, 6 types of acids (Lead-acid, Alkaline long-life, Carbon-zinc, 
+NiMH, NiCad, and Lithium-ion) as well as packet sizes up to $2^{10}$ was used to retreive 660 simulation results. 
+
+These results were used to do an analysis of the different variables that were 
