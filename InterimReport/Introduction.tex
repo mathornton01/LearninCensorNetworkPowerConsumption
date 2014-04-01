@@ -1,18 +1,18 @@
 \section{Introduction}
 \subsection{Previous Work}
 Wireless Sensor Networks(WSN) are being used in a variety of exciting 
-applications. The UUTE project{4561146} will provide more independence 
+applications. The UUTE project\cite{4561146} will provide more independence 
 and mobility to the elderly and recovering patients by using wearable 
 wireless sensors to monitor their health. But many WSN applications 
 depend on a limited battery as a source of energy.  Using power 
 effectively is important in keeping the WSN functional and cost efficient.
- In{6558065},Manju identifies the activities which waste battery power 
+ In\cite{6558065},Manju identifies the activities which waste battery power 
 the most in a WSN node.  A node wastes energy when the packet it sends 
 becomes corrupt due to a collision, and retransmissions are required 
 since error correcting codes, which use additional power, are not 
-often used {4476299}. Also, overheating is when a node is needlessly 
+often used \cite{4476299}. Also, overheating is when a node is needlessly 
 awakened from sleep mode when it intercepts a transmission that was 
-meant for a different node.  Misuse of control packet {6558065} can 
+meant for a different node.  Misuse of control packet \cite{6558065} can 
 also drain power by keeping a node listening, until a timeout occurs, 
 for packets that will never arrive or by causing the a node to needlessly 
 transmit responses.
@@ -21,10 +21,10 @@ transmit responses.
 An attacker could take advantage of these power wasting scenarios and 
 force them to happen more often than they normal would.  Any attacks 
 that causes these effects for long periods of time are considered 
-Denial-of-Sleep {4476299} attacks because a node is being forced to 
+Denial-of-Sleep \cite{4476299} attacks because a node is being forced to 
 use up power to performing meaningless tasks instead of switching to 
 a power-conserving sleep mode. These previously mentioned battery draining
- scenarios all occur in the MAC layer, but Vasserman and Hopper{6112758} 
+ scenarios all occur in the MAC layer, but Vasserman and Hopper\cite{6112758} 
 bring up the point that attackers could achieve the same goal in the 
 network layer by forcing the packets to take the longest path possible 
 to reach its destination, or worse: route the packets in an endless loop, 
