@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.3.19)  1 APR 2014 09:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  1 APR 2014 11:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,7 +6,7 @@ entering extended mode
 (./InterimFinal.tex
 LaTeX2e <2011/06/27>
 Babel <3.9f> and hyphenation patterns for 78 languages loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
+(/usr/local/texlive/2013/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
 Document Class: IEEEtran 2012/12/27 V1.8 by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
@@ -17,7 +17,7 @@ Document Class: IEEEtran 2012/12/27 V1.8 by Michael Shell
 \@IEEEtrantmptoksA=\toks14
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 368.
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -- Using 8.5in x 11in (letter) paper.
@@ -105,13 +105,13 @@ LaTeX Font Info:    ... okay on input line 4.
  (./title.tex
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 4.
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+(/usr/local/texlive/2013/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 4.
-) (./abstract.tex)
-(./InterimFinal.toc
+)
+(./abstract.tex) (./InterimFinal.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -122,31 +122,34 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write3
 \openout3 = `InterimFinal.toc'.
 
- (./Introduction.tex [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+ (./Introduction.tex [1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updm
+ap/pdftex.map}
 
 
-]) (./Methodology.tex) (./ResultsAndAnalysis.tex [2]) [3
-
-]
-(./InterimFinal.aux) ) 
+]) (./Methodology.tex)
+(./ResultsAndAnalysis.tex [2]) (./Conclusion.tex)
+No file InterimFinal.bbl.
+[3] (./InterimFinal.aux) ) 
 Here is how much of TeX's memory you used:
- 956 strings out of 493307
- 16764 string characters out of 6139905
- 73722 words of memory out of 5000000
- 4455 multiletter control sequences out of 15000+600000
+ 960 strings out of 493315
+ 16841 string characters out of 6137904
+ 73686 words of memory out of 5000000
+ 4451 multiletter control sequences out of 15000+600000
  36899 words of font info for 70 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  26i,5n,19p,1873b,201s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.en
-c}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
-imes/utmri8a.pfb>
-Output written on InterimFinal.pdf (3 pages, 62899 bytes).
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/b
+ase/8r.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr
+/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/te
+xlive/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013
+/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on InterimFinal.pdf (3 pages, 79799 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
+ 43 PDF objects out of 1000 (max. 8388607)
+ 30 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
