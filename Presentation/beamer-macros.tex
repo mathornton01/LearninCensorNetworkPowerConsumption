@@ -1,0 +1,101 @@
+%begin custom commands for full-size pics
+\newenvironment{changemargin}[2]{%
+\begin{list}{}{%
+\setlength{\topsep}{0pt}%
+\setlength{\leftmargin}{#1}%
+\setlength{\rightmargin}{#2}%
+\setlength{\listparindent}{\parindent}%
+\setlength{\itemindent}{\parindent}%
+\setlength{\parsep}{\parskip}%
+}%
+\item[]}{\end{list}}
+
+
+% Make one image take up the entire slide content area in beamer,.:
+% centered/centred full-screen image, with title:
+% This uses the whole screen except for the 1cm border around it
+% all. 128x96mm
+\newcommand{\titledFrameImage}[2]{
+\begin{frame}{#1}
+\begin{changemargin}{-1cm}{-1cm}
+\begin{center}
+\includegraphics[width=108mm,height=.88\textheight,keepaspectratio]{#2}
+\end{center}
+\end{changemargin}
+\end{frame}
+}
+
+\newcommand{\titledFrameImageURL}[3]{
+\begin{frame}{#1}
+\begin{changemargin}{-1cm}{-1cm}
+\begin{center}
+\includegraphics[width=108mm,height=.82\textheight,keepaspectratio]{#2}
+\newline
+{\tiny Source: \url{#3}}
+\end{center}
+\end{changemargin}
+\end{frame}
+}
+
+\newcommand{\titledFrameImageSource}[3]{
+\begin{frame}{#1}
+\begin{changemargin}{-1cm}{-1cm}
+\begin{center}
+\includegraphics[width=108mm,height=.82\textheight,keepaspectratio]{#2}
+\newline
+{\tiny Source: #3}
+\end{center}
+\end{changemargin}
+\end{frame}
+}
+
+\newcommand{\titledFrameDoubleImage}[3]{
+\begin{frame}{#1}
+\begin{changemargin}{-1cm}{-1cm}
+\begin{center}
+\includegraphics[width=108mm,height=.5\textwidth,keepaspectratio]{#2}
+\includegraphics[width=108mm,height=.5\textwidth,keepaspectratio]{#3}
+\end{center}
+\end{changemargin}
+\end{frame}
+}
+
+
+% Make one image take up the entire slide content area in beamer.:
+% centered/centred full-screen image, no title:
+% This uses the whole screen except for the 1cm border around it
+% all. 128x96mm
+\newcommand{\plainFrameImage}[1]{
+\begin{frame}[plain]
+\begin{changemargin}{-1cm}{-1cm}
+\begin{center}
+\includegraphics[width=108mm,height=76mm,keepaspectratio]{#1}
+\end{center}
+\end{changemargin}
+\end{frame}
+}
+
+% Make one image take up the entire slide area, including borders, in beamer.:
+% centered/centred full-screen image, no title:
+% This uses the entire whole screen
+\newcommand{\maxFrameImage}[1]{
+\begin{frame}[plain]
+\begin{changemargin}{-1cm}{-1cm}
+\begin{center}
+\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]
+{#1}
+\end{center}
+\end{changemargin}
+\end{frame}
+}
+%end custom commands for full-size pics
+
+
+% create a plus and minus bullet point for advantages/disadvantages
+\newcommand{\positem}[1]{
+\item[\color{green}{\bf +}] #1}
+
+\newcommand{\negitem}[1]{
+\item[\color{red}{\bf -}] #1}
+\newcommand{\xitem}[1]{
+\item[\color{red}{\bf X}] #1}
