@@ -92,381 +92,103 @@ April 26, 2014}
   \titlepage 
 \end{frame}
 
-\titledFrameImage{Reports of DDoS attacks are rampant}{Figures/DDoS?.jpeg}
-\maxFrameImage{Figures/SlushDDoS.jpeg}
-\maxFrameImage{Figures/goxddos.jpeg}
-\maxFrameImage{Figures/SatoshiDDoS.jpeg}
-\maxFrameImage{Figures/ExchangesHit.jpeg}
-\maxFrameImage{Figures/BitcoinAttacked.jpeg}
-
-\begin{frame}{Motivation}
-
-\begin{itemize}
-  \item DDoS attacks are perhaps the most common scourge to afflict Bitcoin participants
-  \item No one has systematically tracked DDoS on Bitcoin
-  \item Thus it is hard to assess their impact on the Bitcoin ecosystem
-  \item We measure DDoS reports to identify their real prevalence and impact
-\end{itemize}
-
-\end{frame}
-
  \begin{frame}{Outline of today's talk}
     \tableofcontents
   \end{frame}
 
+\section{Introduction}
+\subsection{Topics}
+
+\begin{frame}{Brief Intro to Wireless Sensor Networks(WSNs)}
+\begin{itemize}
+	\item A \textbf{wireless sensor network(WSN)} is a network of \textbf{Sensor Nodes}
+	\item \textbf{Sensor Nodes} send and receive wide varieties of data.
+	\item \textbf{Sensor Nodes} are developed in bulk for mass deployment 
+	\item \textbf{WSNs} can be applied to many problems
+\end{itemize}
+\end{frame}
+
+\titledFrameImage{Usage of Wireless Sensor Neworks}{Figures/Portada_490px.jpg}
+\maxFrameImage{Figures/forest_fire_detection.png}
+\maxFrameImage{Figures/security_sensor.png}
+
+\begin{frame}{Attacks on WSN power supplies}
+\begin{itemize}
+	\item Bulk production has robbed WSNs of more robust \textbf{battery lives}
+	\item The nature of WSNs makes them easy targets for \textbf{Power Consumption Attacks}
+	\item A \textbf{Power Consumption Attack} exploits the small battery life of Sensor Nodes by draining the battery
+	\item This attack can have devastating effects on the WSN
+	\item \textbf{Power Consumption Attacks} are performed in multiple ways
+\end{itemize}	
+\end{frame}
+
+\titledFrameImage{Power Consumption attack models}{Figures/AModel1.png}
+\maxFrameImage{Figures/AModel2.png}
+\maxFrameImage{Figures/AModel3.png}
+
+\subsection{Motivation}
+
+\begin{frame}{Problem}
+\begin{itemize}
+
+	\item WSNs are vulnerable targets because of their power supply
+	\item Certain WSNs are targeted frequently
+	\item \textbf{How do we defend against a wide range of Power Consumption Attacks?}
+	
+\end{itemize}
+\end{frame}
+
 \section{Methodology}
 
-\subsection{Data Collection}
+\section{Results and Analysis}
 
-\begin{frame}{Data sources}
-\begin{adjustwidth}{-9.5mm}{}
-\begin{tabular}{|c|c|c|}
-	\hline
-	\textbf{Source} & \textbf{Data Collected} & \textbf{Description}\\
-	\hline
-	Bitcointalk.org &  \includegraphics[width = 2cm, scale=.1]{Figures/ForumPost2.jpeg} & Forum posts containing "DDoS"\\
-	\hline
-	Bitcoincharts.org & \includegraphics[width = 2cm, height = 0.5cm, scale=.07]{Figures/GoxDataCharts.jpeg} & Currency exchange information\\
-	\hline
-	Blockchain.info/pools &&\\\small(Internet Archive) & \includegraphics[height = 1 cm, width = 2 cm, scale=.2]{Figures/PoolPieChart.jpeg} & Pool's historical hashrates\\
-	\hline
-	Bitcoin.it/wiki/Trade & \includegraphics[height = 1cm, width = 2 cm, scale = 0.2]{Figures/BitcoinServices.jpeg} & List of services and pools\\
-	\hline
-\end{tabular}
-\end{adjustwidth}
+\subsection{Simulation Results}
 
+\subsection{Mitigation Strategies}
 
-%%%%%%%%%%%1st Draft%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{itemize}
-%\item Data sources
-%  \begin{enumerate}
-%    \item Reports of DDoS Attacks - bitcointalk.org
-%    \item Currency Trade Data - bitcoincharts.org
-%    \item Hashrate shares - blockchain.info (Internet Archive)
-%  \end{enumerate}
-%  \item Key measures: DDoS Dates, Service Information
-%    \begin{itemize}
-%      \item When are reports of DDoS on particular services concentrated?
-%      \item What values will these DDoS attacks be likely to affect?
-%      \begin{itemize}
-%      	\item Currency Exchanges - Trade Volume, Exchange Price
-%      	\item Mining Pools - Hashrate Share
-%      \end{itemize}
-%    \end{itemize}
-%\end{itemize}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\end{frame}
-
-\maxFrameImage{Figures/Portugese.png}
-\maxFrameImage{Figures/DOSgames.png}
-\begin{frame}{}
-\begin{tikzpicture}
-    \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=1.1\textwidth]{Figures/btctalkdossidos.png}};
-    \draw[red,ultra thick,rounded corners] (5.6,4.9) rectangle
-    (1.8,4.5);
-    \node[anchor=south east, inner sep=0,rotate=-10] at (9.5,1.8)  {\includegraphics[height=110pt]{Figures/dosidos.png}};
-\end{tikzpicture}
-\end{frame}
-
-
-\subsection{Identifying Reported DDoS Attacks}
-
-\begin{frame}{From posts to attacks}
-\begin{itemize}
-\item Google API searched on Bitcointalk.org found \textbf{2940 pages} mentioning "DDoS"
-\item Pages were pared down to \textbf{1355 distinct threads (first page only)}
-\item Rule based classifier flagged \textbf{362 posts} as likely attacks
-\begin{itemize}
-	\item Whitelist: ``unreachable'', ``offline'', ``on-line'', ``down'', ``flooding'', ``attack'', ``ddos'', ``unavailable'', ``blocking'' and ``connect''
-	\item Blacklist: \textcolor{red}{``anti-ddos"} or \textcolor{red}{``vote''} 
-	\item Flagged posts contain at least one word in the whitelist and none in the blacklist
-\end{itemize}
-\item Manual inspection of posts yields \textbf{200 attacks}
-\item De-duplication yields \textbf{142 distinct attack reports}
-
-\end{itemize}
-\end{frame}
-
-\section{Empirical Analysis}
-\subsection{Reported DDoS over Time and by Target}
-
-\begin{frame}{Mapping attacks to Bitcoin services}
-\begin{itemize}
-          \item Examined \textbf{1\,240 services} including \textbf{32 mining pools}
-	\item \textbf{142 distinct DDoS attacks} reported
-	\item \textbf{46 specific services} were targeted:
-\end{itemize}
-\begin{center}
-\includegraphics[scale=0.33]{Figures/ddoscat.pdf}
-\end{center}
-\end{frame}
-
-%Used bitcoin.it/wiki in order to find \textbf{1240
-              %services, and 32 mining pools}
-	% \begin{tabular}{| c | c |}
-	% \hline
-	% 	\textbf{Service Type} & \textbf{Percentage of DDoS effecting}\\
-	% 	\hline
-	% 	\hline
-	% 	Currency Exchanges & 40\%\\
-	% 	\hline
-	% 	Mining Pools & 38\%\\
-	% 	\hline
-	% 	Gambling & 9\%\\
-	% 	\hline
-	% 	Finance & 6\%\\
-	% 	\hline
-	% 	eWallets & 4\%\\
-	% 	\hline
-	% 	Other Services & 3\%\\
-	% 	\hline
-	% \end{tabular}
-
-%\titledFrameImage{Attack Reports per Service}{Figures/ddoscat.pdf}
-
-\begin{frame}{Reported DDoS over time and by category}
-\begin{center}
-\vspace*{-4em}
-\includegraphics[scale=0.6]{../pub/bitcoin14/fig/ddostimecat.pdf}
-\end{center}
-\end{frame}
-
-% \begin{frame}{Reported DDoS over Time and by Category Analysis}
-% \begin{itemize}
-
-% 	\item Reports begin in \textbf{May 2011} (This is when we started looking for reports using the Google API)
-% 	\item During the \textbf{second half of 2011 attacks mainly concerned mining pools}
-% 	\item Few reports were made during the first part of 2012
-% 	\item in Second part of 2012 reports began to spike \textbf{targeting exchanges and other sites}
-% 	\item In early 2013 reports still mainly concerned exchanges but \textbf{began to taper off mid 2013}
-% 	\item Gambling attacks experienced a small surge in late 2013
-% \end{itemize}
-% %%%%%%%%%%%%%%%%%%1st Draft%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %	\item Possible Factors:
-% %	\begin{itemize}
-% %		\item Pool Size
-% %		\item Hashrate Share
-% %		\item Anti-DDoS Counter Measures
-% %	\end{itemize}
-% %	\item Pools Examined:
-% %	\begin{itemize}
-% %		\item Slush's Pool
-% %		\item BTC Guild
-% %		\item Eclipse MC
-% %		\item DeepBit
-% %		\item 50BTC
-% %		\item Eligius
-% %	\end{itemize}
-% %\end{itemize}
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% \end{frame}
-
-
-% \begin{frame}{Attack Reports per Service Analysis}
-% \begin{itemize}
-% 	\item 29 specific attacks are on Mt. Gox
-% 	\item 32 \% of Pools have experienced DDoS
-% 	\item 0.7\% of shops selling physical goods have experienced attacks
-% 	\item Bitcoin payment systems are not targeted any more than average
-% \end{itemize}
-
-% \end{frame}
-
-\begin{frame}{Identifying the use of anti-DDoS mechanisms}
+\begin{frame}{Previous Strategies}
 
 \begin{itemize}
-%	\item Certain services employ counter measures to help protect from DDoS
-	\item Anti-DDoS mechanisms include content distribution networks (CDNs) and clever firewalls
-    \item Anti-DDoS services identifed: \textbf{Amazon, Cloudflare, Incapsula}
-	\item Resolved the IP addresses of Bitcoin services and compared with known CDN IP ranges
-	\item Found \textbf{178 services} that used Anti-DDoS countermeasures out of a total \textbf{1190 services}
-\end{itemize}
 
-\end{frame}
-
-\begin{frame}{DDoS attacks and countermeasures by service category}
-\vspace{-1em}
-\scalebox{0.95}{
- \begin{table}
- \begin{tabular}{lr|rc|rc}
- \toprule
-  & & \multicolumn{2}{c}{Suffer DDoS} &\multicolumn{2}{c}{Use Anti-DDoS} \\
- Category & \# & \% & Sig.? &\% & Sig.? \\
- \midrule
-{\it Average}& &{\it 7.3}&  &{\it 19.9}& \\
-\midrule
-Currency exchanges&119& {\bf 10.9} &{\bf +} &{\bf 36.1}&{\bf +} \\
-Financial&26&{\bf 15.4} & {\bf +} &26.9& \\
-Pool&41& {\bf 28.6} & {\bf +} &\bf{34.1} & {\bf +} \\
-Bitcoin eWallets&17& {\bf 26.8} &{\bf +}&35.3& \\
-Bitcoin payment systems&11&9.1&  &18.2& \\
-Material/physical products&295&\bf{0.7}&{\bf --} &{\bf 10.5}&{\bf --}\\
-Internet \& mobile services&225&1.8&  &16.9& \\
-Online products&185&3.8&  &14.6& \\
-Professional services&137&0&  &10.2& \\
-Travel/tourism/leisure &78&0&  &10.3& \\
-Commerce \& community&71&1.4&  &12.7& \\
-Getting started&31&0&  &12.9& \\
- \bottomrule
-\end{tabular}
-\end{table}
-}
-\end{frame}
-
-
-\begin{frame}{Do DDoSed firms buy anti-DDoS protection?}
-\begin{table}[!ht]
-\centering
-\begin{itemize}
-	\item Does suffering a DDoS attack make a service more likely to purchase DDoS countermeasures? \visible<2->{{\textcolor{red}{Yes!}}}
-\end{itemize}
-\vspace*{3em}
-\begin{tabular}{l|rrrr}
-\toprule
- & \multicolumn{2}{c}{Use Anti-DDoS} & \multicolumn{2}{c}{No Anti-DDoS}\\
- & \# & \%& \# & \%\\
-\midrule
-Suffered DDoS & 25 & \only<1>{54\%} \only<2->{{\color{red}{54\%}}}& 21 & 46\% \\
-No DDoS &  178 & \only<1>{15\%} \only<2->{{\color{red}{15\%}}}& 1\,012 & 85\% \\
-\bottomrule
-\end{tabular}
-\end{table}
-\end{frame}
-% \begin{itemize}
-
-% 	\item 46 distinct services have experienced DDoS attacks
-% 	\item More then half of those 46 now employ DDoS
-% 	\item Of All those that have not experienced DDOs
-% 	\item Only 15\% employ Anti-DDoS countermeasures
-% \end{itemize}
-
-
-\subsection{DDoS Attacks on Mining Pools}
-
-\begin{frame}{DDoS attacks on mining pools}
-
-\begin{itemize}
-	\item Does the size of a mining pool affect its tendency to be DDoSed? \visible<2->{{\textcolor{red}{Yes!}}}
-	\item Captured 22 historical records
-          %  from blockchain.com/pools
-         of hashrate shares of mining pools
-	\item A pool is ``big'' if it has at least a 5\% share of the hash rate during 2 or more observations
-\begin{table}[ht]
-\centering
-\begin{tabular}{l|rrrr}
-\toprule
- & \multicolumn{2}{c}{Small Pools} & \multicolumn{2}{c}{Big Pools}\\
- & \# & \%& \# & \%\\
-\midrule
-Suffered DDoS & 7 & \only<1>{17.1\%} \only<2->{{\color{red}{17.1\%}}}& 5 & \only<1>{62.5\%} \only<2->{{\color{red}{62.5\%}}} \\
-No DDoS & 34  & 82.9\% & 3 & 37.5\% \\
-\bottomrule
-\end{tabular}
-\label{tab:pool}
-\end{table}
-%	\item \visible<2->{{\color{red}{5 out of 8 "big" pools(63\%) experienced DDoS}}}
-%	\item \visible<2->{{\color{red}{just 7 out of 41 "small" pools(17\%) experienced DDoS}}}
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Historical hash-rate-based market shares}
-%\hspace*{-3em}
-\includegraphics[width=0.49\textwidth]{Figures/HashRates1to3.jpeg}
-\hfill
-\includegraphics[width=0.48\textwidth]{Figures/HashRates4to6.jpeg}
-\end{frame}
-
-\begin{frame}{Historical hash-rate-based market shares}
-\begin{columns}[t]
-\begin{column}[T]{5cm}
-\includegraphics[scale=0.235]{Figures/AllPoolsDistributionSplit.pdf}
-\end{column}
-\hspace{-5em}
-\begin{column}[C]{9cm}
-\begin{itemize}
-	\item Pools sometime unfazed by DDoS attacks\begin{itemize}	
-		\item BTC Guild increased its market share after an attack in mid-2012
-		\item But its share decreased after an attack in mid-2013
-	\end{itemize}
-	\item DDoS attacks sometimes target multiple pools at once
+	\item Some \textbf{risk mitigation strategies} have already been adopted for use in WSNs:
 	\begin{itemize}
-		\item Deepbit, BTC Guild, and Eclipse targeted at the same time as seen mid-2012
+		\item \textbf{Predefined Transfer Windows}
+		\item \textbf{Node Reception Memory}
+		\item \textbf{Jamming Detection Protocols}
+		\item \textbf{Low Power Wake-up Radio}
+		\item \textbf{Defined Maximum Path Length}
 	\end{itemize}
-	\item We can reject the notion that DDoS attacks always trigger decline in market share
-	\item DDoS attacks often precede shake ups in pool marketshare
+	\item Many strategies are developed with specific attacks in mind
+	\item Even our proposed strategies have already been deployed
+	
 \end{itemize}
-\end{column}
-\end{columns}
+
 \end{frame}
 
-\subsection{DDoS Attacks on Currency Exchanges}
-
-
-\begin{frame}{DDoS effects on trade volume and price (Mt. Gox)}
-\begin{center}
-	\centering
-	\includegraphics[scale=0.22]{Figures/GoxDDoSData.jpeg}
-\end{center}
-\end{frame}
-
-
-\begin{frame}{DDoS effects on trade volume and price (Mt. Gox)}
+\begin{frame}{Proposed Strategies}
 
 \begin{itemize}
-	\item \textbf{29 total attacks} reported on Mt. Gox
-	\item We compare transaction volume 1 week prior to DDoS and 1 week after DDoS
+
+	\item Targeted the root problem of all Power Consumption attacks: \textbf{pre-defined battery life}
+	\item Installation of solar panels and other similar power regeneration devices.
+	\item Attacks can still be mounted on the network, but would have to fight a endlessly renewing power source 
+	\item This addition could be costly, and distributors would need to shrink the size of their network
+	\item But it is up to the distributor to examine there expected net benefit
+	
 \end{itemize}
-%\begin{table}[ht]
-\begin{tabular}{| c | c | c | c |}
-	\hline
-	\textbf{$\Delta$ Transaction Vol.} & \textbf{\# of Attacks} & \textbf{\% Attacks} &\textbf{\% Change}\\
-	\hline
-	\hline
-	Increase & 12 & 41.4\% & 68.1\%\\
-	\hline	
-	Decrease & 17 & 58.6\% & 31.9\%\\
-	\hline 
-\end{tabular}
-%\end{table}
-\begin{itemize}
-	\item Fall in transaction volume more common than rise after DDoS
-        \item When increases in transaction volume do occur, the magnitude of change is greater than for decreases 
-\end{itemize}
+
 \end{frame}
 
-\titledFrameImage{Change in transaction volume at Mt. Gox following DDoS}{Figures/PercentageChangeMtGox.pdf}
+\section{conclusion}
 
-\section{Conclusion}
-\subsection{Takeaways}
-\begin{frame}{Takeaways}
-\begin{itemize}
-	\item 7\% of all known operators have been subject to DDoS attacks
-	\item Currency exchanges, mining pools, gambling operators, eWallets, and financial services are more likely to be attacked
-	\item Services that are attacked are more than 3 times as likely to buy anti-DDoS services
-        \item Large mining pools more likely to be DDoSed than small pools
-	%\item Disproportionate amounts of DDoS reports were made during the spikes in trade volume and exchange rate that occured in Spring 2013
-\end{itemize}
-\end{frame}
 \subsection{Future Work}
-\begin{frame}{Future work}
+\begin{frame}{Future Work}
+\begin{itemize}
 
-	\begin{itemize}
-                  \item Get a more accurate, network-based measure of
-                    Bitcoin DDoS
-		\item Explore the relationship between DDoS and other currencies (e.g., Litecoin)
-		\item Measure other anti-DDoS services
-                  \item Study impact of other factors on DDoS attacks (e.g., mining pool structure)
-	\end{itemize}
-\end{frame}
-\subsection{Questions?}
-\begin{frame}
-	\center
-	\begin{center}
-		\huge{Questions?}
-	\end{center}
-\end{frame}
+	\item Model and test additional attack types 
+	\item Do a cost benefit analysis of different types of \textbf{batteries} and \textbf{alternative power sources}
+	\item compare cost benefits of other mitigation strategies 
+
+\end{itemize}
+\end{frame}	
 \end{document}
