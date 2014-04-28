@@ -143,23 +143,29 @@ April 26, 2014}
 
 \section{Methodology}
 
-\subsection{Standard Power Consumption and Routing Attack}
+\subsection{Attack Simulations}
 
 \begin{frame}{Attack Simulation}
 	\begin{itemize}
-	\item The \textbf{Standard Power Consumption attack} refers to the attack seen in model 1
-	\item It was simulated in an environment that allowed for user defined: 
-	\item The \textbf{Routing Power Consumption attack} refers to the attack seen in model 3
+	\item The \textbf{standard power consumption attack} seen in model 1 and the \textbf{routing power consumption attack} seen in model 3 were simulated in an environment that allowed user defined: 
+	\begin{itemize}
+		\item Packet Size (bits)
+		\item Initial Node Energy (joules)
+		\item Power To Transmit Messages (Watts)
+		\item Power To Receive Messages (Watts)
+		\item speed of Transmission radios (bps)
+	\end{itemize}
+	\item Each of these were variate for 55,000 simulations.
 	
 	\end{itemize}
 \end{frame}
 
-\subsection{Battery Tests}
+\subsection{Battery Behavior}
 
 \begin{frame}{Battery Tests}
 \begin{itemize}
-	\item The first simulation results tested different types of \textbf{batteries}
 	\item The logical conclusion to mitigate risks of \textbf{Power Consumption Attacks} is to use more powerful \textbf{batteries}
+	\item Another simulation we ran tested various types of batteries
 	\item The batteries tested were: 
 	\begin{itemize}
 	  \item Lead-Acid Batteries
@@ -173,8 +179,6 @@ April 26, 2014}
 	\item And Packet sizes varying from \textbf{2 bits} to \textbf{1 kb}
 \end{itemize}
 \end{frame}
-
-
 
 \section{Results and Analysis}
 
