@@ -1,3 +1,4 @@
+Attack Type, Packet Size, Initial Energy(joules), Transmission Power(Watts), Reception Power(Watts),Connection Data Rate(bits/sec), Packets Sent, Time to Compromise(seconds)
 std,1024,0.125,0.1,0.1,58,1,17.6551724138
 rte,1024,0.125,0.1,0.1,58,1,17.6551724138
 std,1024,0.125,0.1,0.1,10058,3,0.305428514615
