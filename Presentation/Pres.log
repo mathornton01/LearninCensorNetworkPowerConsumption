@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  26 APR 2014 17:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  28 APR 2014 17:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1124,7 +1124,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 ] [4
 
 ]
-<Figures/Portada_490px.jpg, id=229, 491.8375pt x 362.35374pt>
+<Figures/Portada_490px.jpg, id=236, 491.8375pt x 362.35374pt>
 File: Figures/Portada_490px.jpg Graphic file (type jpg)
 
 <use Figures/Portada_490px.jpg>
@@ -1137,21 +1137,21 @@ Overfull \vbox (0.92339pt too high) detected at line 111
 [5
 
  <./Figures/Portada_490px.jpg>]
-<Figures/forest_fire_detection.png, id=262, 501.875pt x 431.6125pt>
+<Figures/forest_fire_detection.png, id=270, 702.625pt x 598.235pt>
 File: Figures/forest_fire_detection.png Graphic file (type png)
 
 <use Figures/forest_fire_detection.png>
 Package pdftex.def Info: Figures/forest_fire_detection.png used on input line 1
 12.
-(pdftex.def)             Requested size: 317.62262pt x 273.15544pt.
+(pdftex.def)             Requested size: 320.80988pt x 273.1467pt.
 
-Overfull \vbox (4.00882pt too high) detected at line 112
+Overfull \vbox (4.00008pt too high) detected at line 112
  []
 
 [6
 
  <./Figures/forest_fire_detection.png>]
-<Figures/security_sensor.png, id=288, 240.9pt x 153.4533pt>
+<Figures/security_sensor.png, id=295, 240.9pt x 153.4533pt>
 File: Figures/security_sensor.png Graphic file (type png)
 
 <use Figures/security_sensor.png>
@@ -1162,7 +1162,7 @@ Package pdftex.def Info: Figures/security_sensor.png used on input line 113.
  <./Figures/security_sensor.png>] [8
 
 ]
-<Figures/AModel1.png, id=346, 659.1024pt x 429.2838pt>
+<Figures/AModel1.png, id=353, 659.1024pt x 429.2838pt>
 File: Figures/AModel1.png Graphic file (type png)
 
 <use Figures/AModel1.png>
@@ -1175,36 +1175,30 @@ Overfull \vbox (0.91936pt too high) detected at line 125
 [9
 
  <./Figures/AModel1.png>]
-<Figures/AModel2.png, id=382, 653.3208pt x 424.4658pt>
+<Figures/AModel2.png, id=388, 653.3208pt x 424.4658pt>
 File: Figures/AModel2.png Graphic file (type png)
 
 <use Figures/AModel2.png>
 Package pdftex.def Info: Figures/AModel2.png used on input line 126.
-(pdftex.def)             Requested size: 364.19235pt x 236.61758pt.
- [10
+(pdftex.def)             Requested size: 307.21034pt x 199.5961pt.
 
- <./Figures/AModel2.png>]
-<Figures/AModel3.png, id=407, 626.34pt x 494.8086pt>
-File: Figures/AModel3.png Graphic file (type png)
- <use Figures/AModel3.png>
-Package pdftex.def Info: Figures/AModel3.png used on input line 127.
-(pdftex.def)             Requested size: 345.7687pt x 273.15727pt.
-
-Overfull \vbox (4.01065pt too high) detected at line 127
+Overfull \vbox (0.92021pt too high) detected at line 126
  []
 
-[11
+[10
 
- <./Figures/AModel3.png>] [12
+ <./Figures/AModel2.png>] [11
 
-] (./Pres.toc) [13
+] (./Pres.toc) [12
+
+] [13
 
 ] (./Pres.toc) [14
 
-] [15
-
 ]
-[16
+[15
+
+] [16
 
 ] (./Pres.toc) [17
 
@@ -1227,25 +1221,25 @@ Package movie15 Warning: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 (movie15)                @@ superseded by `media9'.           @@
 (movie15)                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 194.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 194.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 214.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 214.
 (./Pres.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 194.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 194.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 214.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 214.
 Package rerunfilecheck Info: File `Pres.out' has not changed.
-(rerunfilecheck)             Checksum: 45FABF4BC04D94E546DBA74DB0F2603F;508.
+(rerunfilecheck)             Checksum: BDF8EC9D949044BC177DF13683A8798F;572.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 194.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 214.
  ) 
 Here is how much of TeX's memory you used:
- 21198 strings out of 493315
- 422956 string characters out of 6137904
+ 21201 strings out of 493315
+ 422928 string characters out of 6137904
  567175 words of memory out of 5000000
- 24074 multiletter control sequences out of 15000+600000
+ 24075 multiletter control sequences out of 15000+600000
  6513 words of font info for 24 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,19n,65p,414b,695s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1254,10 +1248,10 @@ Here is how much of TeX's memory you used:
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></
 usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><
 /usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on Pres.pdf (18 pages, 1302036 bytes).
+Output written on Pres.pdf (18 pages, 1274088 bytes).
 PDF statistics:
- 704 PDF objects out of 1000 (max. 8388607)
- 642 compressed objects within 7 object streams
- 42 named destinations out of 1000 (max. 500000)
- 205 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 730 PDF objects out of 1000 (max. 8388607)
+ 670 compressed objects within 7 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 208 words of extra memory for PDF output out of 10000 (max. 10000000)
 
