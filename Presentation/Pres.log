@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  28 APR 2014 18:40
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  28 APR 2014 18:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1211,13 +1211,38 @@ Overfull \vbox (0.92291pt too high) detected at line 132
 ] (./Pres.toc)
 [16
 
-] [17
+] <Figures/LiIonBATpkt.pdf, id=661, 505.89pt x 505.89pt>
+File: Figures/LiIonBATpkt.pdf Graphic file (type pdf)
 
-] [18
+<use Figures/LiIonBATpkt.pdf>
+Package pdftex.def Info: Figures/LiIonBATpkt.pdf used on input line 187.
+(pdftex.def)             Requested size: 199.59663pt x 199.59663pt.
 
-] (./Pres.toc) [19
+Overfull \vbox (0.92075pt too high) detected at line 187
+ []
+
+[17
+
+ <./Figures/LiIonBATpkt.pdf>]
+<Figures/pktszndtmtocmp1.pdf, id=699, 505.89pt x 505.89pt>
+File: Figures/pktszndtmtocmp1.pdf Graphic file (type pdf)
+
+<use Figures/pktszndtmtocmp1.pdf>
+Package pdftex.def Info: Figures/pktszndtmtocmp1.pdf used on input line 188.
+(pdftex.def)             Requested size: 199.59663pt x 199.59663pt.
+
+Overfull \vbox (0.92075pt too high) detected at line 188
+ []
+
+[18
+
+ <./Figures/pktszndtmtocmp1.pdf>] [19
 
 ] [20
+
+] (./Pres.toc) [21
+
+] [22
 
 ]
 \tf@nav=\write6
@@ -1236,11 +1261,11 @@ Package movie15 Warning: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 (movie15)                @@ superseded by `media9'.           @@
 (movie15)                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 234.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 234.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 238.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 238.
 (./Pres.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 234.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 234.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 238.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 238.
 
 
 Package rerunfilecheck Warning: File `Pres.out' has changed.
@@ -1248,31 +1273,40 @@ Package rerunfilecheck Warning: File `Pres.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `Pres.out':
-(rerunfilecheck)             Before: 4D826FF98BAD7911CAE1DB7A5C8B813D;668
-(rerunfilecheck)             After:  3F66E516481F6AB285E96FFF00B98CC3;644.
+(rerunfilecheck)             Before: 8C47FFFA149A4E50DA7FF773EF9FFE0E;644
+(rerunfilecheck)             After:  6E7BB8D36B56035C3E9466B1C9DD4E67;644.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 234.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 238.
  ) 
 Here is how much of TeX's memory you used:
- 21220 strings out of 493315
- 423164 string characters out of 6137904
+ 21239 strings out of 493315
+ 423535 string characters out of 6137904
  568310 words of memory out of 5000000
- 24086 multiletter control sequences out of 15000+600000
+ 24096 multiletter control sequences out of 15000+600000
  6513 words of font info for 24 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,19n,65p,414b,695s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb>
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></
-usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><
-/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on Pres.pdf (20 pages, 1423951 bytes).
+pdfTeX warning (dest): name{Outline0.4.1.21} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.3.2.18} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.3.1.18} has been referenced but does not e
+xist, replaced by a fixed one
+
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></us
+r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on Pres.pdf (22 pages, 1436872 bytes).
 PDF statistics:
- 826 PDF objects out of 1000 (max. 8388607)
- 761 compressed objects within 8 object streams
- 52 named destinations out of 1000 (max. 500000)
- 221 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 907 PDF objects out of 1000 (max. 8388607)
+ 835 compressed objects within 9 object streams
+ 59 named destinations out of 1000 (max. 500000)
+ 231 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -127,7 +127,7 @@ April 26, 2014}
 \end{itemize}	
 \end{frame}
 
-\titledFrameImage{Power Consumption attack models}{Figures/AModel1.png}
+\titledFrameImage{Power Consumption attack models (1)}{Figures/AModel1.png}
 \titledFrameImage{Power Consumption attack models (2)}{Figures/AModel2.png}
 \titledFrameImage{Power Consumption attack models (3)}{Figures/AModel3.png}
 
@@ -142,23 +142,6 @@ April 26, 2014}
 \end{frame}
 
 \section{Methodology}
-
-\subsection{Attack Simulations}
-
-\begin{frame}{Attack Simulation}
-	\begin{itemize}
-	\item The \textbf{standard power consumption attack} seen in model 1 and the \textbf{routing power consumption attack} seen in model 3 were simulated in an environment that allowed user defined: 
-	\begin{itemize}
-		\item Packet Size (bits)
-		\item Initial Node Energy (joules)
-		\item Power To Transmit Messages (Watts)
-		\item Power To Receive Messages (Watts)
-		\item speed of Transmission radios (bps)
-	\end{itemize}
-	\item Each of these were variate for 55,000 simulations.
-	
-	\end{itemize}
-\end{frame}
 
 \subsection{Battery Behavior}
 
@@ -180,8 +163,29 @@ April 26, 2014}
 \end{itemize}
 \end{frame}
 
+\subsection{Attack Simulations}
+
+\begin{frame}{Attack Simulation}
+	\begin{itemize}
+	\item The \textbf{standard power consumption attack} seen in model 1 and the \textbf{routing power consumption attack} seen in model 3 were simulated in an environment that allowed user defined: 
+	\begin{itemize}
+		\item Packet Size (bits)
+		\item Initial Node Energy (joules)
+		\item Power To Transmit Messages (Watts)
+		\item Power To Receive Messages (Watts)
+		\item speed of Transmission radios (bps)
+	\end{itemize}
+	\item Each of these were variate for 55,000 simulations.
+	
+	\end{itemize}
+\end{frame}
+
+
+
 \section{Results and Analysis}
 
+	\titledFrameImage{Lithium Ion Results}{Figures/LiIonBATpkt.pdf}
+	\titledFrameImage{Comparing Attacks}{Figures/pktszndtmtocmp1.pdf}
 \subsection{Simulation Results}
 
 \subsection{Mitigation Strategies}
