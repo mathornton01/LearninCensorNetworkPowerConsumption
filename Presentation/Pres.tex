@@ -66,9 +66,9 @@
 %NOTE: The proper title of the paper will not fit on the bottom
 %of the slide, this is part of the Warsaw theme, and I am unsure
 %of how it can directly be changed.
-\title{Denial of Sleep Attacks in Wireless Sensor Networks}
+\title{Power Consumption Attacks in Wireless Sensor Networks}
 \author[Micah Thornton \& Ryan Sligh \& Robert Santoski]{Micah Thornton \and {Ryan Sligh} \and Bobby Santoski}
-\institute{Computer Science \& Engineering, Southern Methodist University, USA, \texttt{mathornton@smu.edu}}
+\institute{Computer Science \& Engineering, Southern Methodist University, USA, \texttt{mathornton@smu.edu} \\ \texttt{rsligh@smu.edu} \\ \texttt{rsantoski@smu.edu}}
 
 \date[] 
 {CSE 4344: Networks and Distributed Systems\\
@@ -104,6 +104,11 @@ April 26, 2014}
 	\item A \textbf{wireless sensor network(WSN)} is a network of \textbf{Sensor Nodes}
 	\item \textbf{Sensor Nodes} send and receive wide varieties of data.
 	\item \textbf{Sensor Nodes} are developed in bulk for mass deployment 
+	\item \textbf{Sensor Nodes} are in one of two states: 
+	\begin{itemize}
+		\item \textbf{Sleep Mode}
+		\item \textbf{Active Mode}
+	\end{itemize}
 	\item \textbf{WSNs} can be applied to many problems
 \end{itemize}
 \end{frame}
@@ -123,16 +128,14 @@ April 26, 2014}
 \end{frame}
 
 \titledFrameImage{Power Consumption attack models}{Figures/AModel1.png}
-\titledFrameImage{Power Consumption attack models}{Figures/AModel2.png}
-%\titledFrameImage{Power Consumption attack models}Figures/AModel3.png}
+\titledFrameImage{Power Consumption attack models (2)}{Figures/AModel2.png}
+\titledFrameImage{Power Consumption attack models (3)}{Figures/AModel3.png}
 
 \subsection{Motivation}
 
 \begin{frame}{Problem}
 \begin{itemize}
 
-	\item WSNs are vulnerable targets because of their power supply
-	\item Certain WSNs are targeted frequently
 	\item \textbf{How do we defend against a wide range of Power Consumption Attacks?}
 	
 \end{itemize}
