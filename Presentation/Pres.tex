@@ -101,8 +101,8 @@ April 29, 2014}
 
 \begin{frame}{Wireless Sensor Networks(WSNs)}
 \begin{itemize}
-	\item A \textbf{wireless sensor network(WSN)} is a network of \textbf{Sensor Nodes}
-	\item \textbf{Sensor Nodes} send and receive wide varieties of data.
+	\item A \textbf{Wireless Sensor Network(WSN)} is a network of \textbf{Sensor Nodes}
+	\item \textbf{Sensor Nodes} monitor certain environmental variables
 	\item \textbf{Sensor Nodes} generally operate in one of two states: 
 	\begin{itemize}
 		\item \textbf{Sleep Mode} - less power draw, but can't receive and transmit 
@@ -112,35 +112,34 @@ April 29, 2014}
 \end{frame}
 
 \titledFrameImage{WSN examples (1) - p.H. and flow}{Figures/Portada_490px.jpg}
-\titledFrameImage{WSN examples (2) - fire detection and prevention}{Figures/forest_fire_detection.png}
-\titledFrameImage{WSN examples (3) - security systems}{Figures/security_sensor.png}
+\titledFrameImage{WSN examples (2) - Fire detection and prevention}{Figures/forest_fire_detection.png}
+\titledFrameImage{WSN examples (3) - Security systems}{Figures/security_sensor.png}
 
 \begin{frame}{Attacks on WSN power supplies}
 \begin{itemize}
 	\item \textbf{Sensor Nodes} are developed in bulk for mass deployment 
 	\item Bulk production has robbed WSNs of more robust \textbf{battery lives}
-	\item limited battery lives make sensor nodes easy targets for \textbf{Power Consumption Attacks}
-	\item A \textbf{Power Consumption Attack} drains the battery power of sensor nodes by forcing \textbf{meaningless active mode time}.
+	\item Limited battery lives make sensor nodes easy targets for \textbf{Power Consumption Attacks}
+	\item A \textbf{Power Consumption Attack} drains the battery power of sensor nodes by forcing \textbf{meaningless active mode time}
 	\item Attackers hope to gain something by compromising nodes:
 	\begin{itemize}
 		\item Protocol information for other attacks
-		\item temporary system downing
-		\item permanent system downing
-		\item competitive advantage
+		\item Temporary system downing
+		\item Permanent system downing
+		\item Competitive advantage
 	\end{itemize}
-	\item Here we show some of our attack models
 \end{itemize}	
 \end{frame}
 
-\titledFrameImage{Attack Models (1) - standard denial of sleep}{Figures/AModel1.png}
-\titledFrameImage{Attack Models (2) - inverse denial of sleep}{Figures/AModel2.png}
-\titledFrameImage{Attack Models (3) - routing power draw}{Figures/AModel3.png}
+\titledFrameImage{Attack Models (1) - Standard denial of sleep}{Figures/AModel1.png}
+\titledFrameImage{Attack Models (2) - Inverse denial of sleep}{Figures/AModel2.png}
+\titledFrameImage{Attack Models (3) - Routing power draw}{Figures/AModel3.png}
 
 \subsection{Motivation}
 
 \begin{frame}{Problem}
 \centering
-\textbf{\huge{How do we defend against a wide range of Power Consumption Attacks?}}	
+\textbf{\huge{How do we defend against Power Consumption Attacks?}}	
 \end{frame}
 
 \section{Methodology}
@@ -148,16 +147,16 @@ April 29, 2014}
 \subsection{Overview}
 \begin{frame}{Overview}
 \begin{itemize}
-	\item we simulated \textbf{standard denial of sleep attacks} and \textbf{routing power draw attacks} on WSNs
-	\item we first examined different \textbf{batteries}
-	\item we then simply examined the \textbf{time to compromise} a node under various different assumptions
+	\item Simulated \textbf{standard denial of sleep attacks} and \textbf{routing power draw attacks} on WSNs
+	\item First examined different \textbf{batteries}
+	\item Next the \textbf{time to compromise} a node under various assumptions
 \end{itemize}
 \end{frame}
 \subsection{Battery Behavior}
 
 \begin{frame}{Battery Tests}
 \begin{itemize}
-	\item The logical conclusion to mitigate the risks of \textbf{Power Consumption Attacks} is to use more powerful \textbf{batteries}
+
 	\item The batteries tested were: 
 	\begin{itemize}
 	  \item Lead-Acid Batteries
@@ -170,7 +169,7 @@ April 29, 2014}
 	\item With weights varying from \textbf{0.1 mg} to \textbf{1 mg}
 	\item And Packet sizes varying from \textbf{2 bits} to \textbf{1 kb}
 	\item We got approximately \textbf{700} simulation results from NS3
-	\item packets were sent every \textbf{10 ms} in this simulation
+	\item Packets were sent every \textbf{10 ms} in this simulation
 \end{itemize}
 \end{frame}
 
@@ -184,7 +183,7 @@ April 29, 2014}
 		\item Initial Node Energy (joules)
 		\item Power To Transmit Messages (Watts)
 		\item Power To Receive Messages (Watts)
-		\item speed of Transmission radios (bps)
+		\item Speed of Transmission radios (bps)
 	\end{itemize}
 	\item Each of these were variate for \textbf{55,000} simulations
 	\end{itemize}
@@ -221,7 +220,7 @@ April 29, 2014}
 			\item \textbf{TTC(Min)} = Minimum Time to Compromise w/ std attack
 			\item \textbf{MTTC} = Mean Time to Compromise w/ std attack
 			\item \textbf{TTC(Max)} = Maximum Time to Compromise w/ std attack
-			\item as expected Lithium Ion Battery is most effective
+			\item As expected the Lithium Ion Battery is most effective
 		\end{itemize}
 	\end{frame}
 	\titledFrameImage{Battery Analysis(2) - Varied Weights}{Figures/LINBATTTC.pdf}
@@ -270,6 +269,7 @@ April 29, 2014}
 
 \begin{itemize}
 
+	\item One logical way to mitigate the risks of \textbf{Power Consumption Attacks} is to use more powerful \textbf{batteries}
 	\item Because the Routing attack we examined is much more potent examination of routing procedures should be carfully examined
 	\item the possibility of placing nodes so they do not have to route should be considered for small crucial WSNs
 	\item Targeted the root problem of all Power Consumption attacks: \textbf{pre-defined battery life}

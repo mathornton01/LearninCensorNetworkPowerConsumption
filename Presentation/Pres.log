@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  29 APR 2014 03:27
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  29 APR 2014 11:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1166,10 +1166,10 @@ Package pdftex.def Info: Figures/security_sensor.png used on input line 116.
 File: Figures/AModel1.png Graphic file (type png)
 
 <use Figures/AModel1.png>
-Package pdftex.def Info: Figures/AModel1.png used on input line 135.
+Package pdftex.def Info: Figures/AModel1.png used on input line 134.
 (pdftex.def)             Requested size: 306.44926pt x 199.59525pt.
 
-Overfull \vbox (0.91936pt too high) detected at line 135
+Overfull \vbox (0.91936pt too high) detected at line 134
  []
 
 [9
@@ -1179,10 +1179,10 @@ Overfull \vbox (0.91936pt too high) detected at line 135
 File: Figures/AModel2.png Graphic file (type png)
 
 <use Figures/AModel2.png>
-Package pdftex.def Info: Figures/AModel2.png used on input line 136.
+Package pdftex.def Info: Figures/AModel2.png used on input line 135.
 (pdftex.def)             Requested size: 307.21034pt x 199.5961pt.
 
-Overfull \vbox (0.92021pt too high) detected at line 136
+Overfull \vbox (0.92021pt too high) detected at line 135
  []
 
 [10
@@ -1192,10 +1192,10 @@ Overfull \vbox (0.92021pt too high) detected at line 136
 File: Figures/AModel3.png Graphic file (type png)
 
 <use Figures/AModel3.png>
-Package pdftex.def Info: Figures/AModel3.png used on input line 137.
+Package pdftex.def Info: Figures/AModel3.png used on input line 136.
 (pdftex.def)             Requested size: 272.5622pt x 199.5988pt.
 
-Overfull \vbox (0.92291pt too high) detected at line 137
+Overfull \vbox (0.92291pt too high) detected at line 136
  []
 
 [11
@@ -1213,16 +1213,16 @@ Overfull \vbox (0.92291pt too high) detected at line 137
 ] (./Pres.toc) [17
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 226.
+LaTeX Font Info:    Try loading font information for U+msa on input line 225.
  (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 226.
+LaTeX Font Info:    Try loading font information for U+msb on input line 225.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 226.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 225.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
@@ -1233,10 +1233,10 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 File: Figures/LINBATTTC.pdf Graphic file (type pdf)
 
 <use Figures/LINBATTTC.pdf>
-Package pdftex.def Info: Figures/LINBATTTC.pdf used on input line 227.
+Package pdftex.def Info: Figures/LINBATTTC.pdf used on input line 226.
 (pdftex.def)             Requested size: 199.59663pt x 199.59663pt.
 
-Overfull \vbox (0.92075pt too high) detected at line 227
+Overfull \vbox (0.92075pt too high) detected at line 226
  []
 
 [19
@@ -1248,17 +1248,21 @@ Overfull \vbox (0.92075pt too high) detected at line 227
 File: Figures/pktszndtmtocmp1.pdf Graphic file (type pdf)
 
 <use Figures/pktszndtmtocmp1.pdf>
-Package pdftex.def Info: Figures/pktszndtmtocmp1.pdf used on input line 247.
+Package pdftex.def Info: Figures/pktszndtmtocmp1.pdf used on input line 246.
 (pdftex.def)             Requested size: 199.59663pt x 199.59663pt.
 
-Overfull \vbox (0.92075pt too high) detected at line 247
+Overfull \vbox (0.92075pt too high) detected at line 246
  []
 
 [21
 
  <./Figures/pktszndtmtocmp1.pdf>] [22
 
-] [23
+]
+Overfull \vbox (18.92421pt too high) detected at line 283
+ []
+
+[23
 
 ] (./Pres.toc) [24
 
@@ -1300,7 +1304,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 302.
 Here is how much of TeX's memory you used:
  21315 strings out of 493315
  424700 string characters out of 6137904
- 569309 words of memory out of 5000000
+ 569310 words of memory out of 5000000
  24141 multiletter control sequences out of 15000+600000
  11779 words of font info for 46 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -1311,7 +1315,7 @@ Here is how much of TeX's memory you used:
 /usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></u
 sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></
 usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on Pres.pdf (26 pages, 1459477 bytes).
+Output written on Pres.pdf (26 pages, 1459277 bytes).
 PDF statistics:
  1056 PDF objects out of 1200 (max. 8388607)
  978 compressed objects within 10 object streams
