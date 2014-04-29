@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  29 APR 2014 01:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  29 APR 2014 01:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1216,10 +1216,10 @@ Overfull \vbox (0.92291pt too high) detected at line 137
 File: Figures/LiIonBATpkt.pdf Graphic file (type pdf)
 
 <use Figures/LiIonBATpkt.pdf>
-Package pdftex.def Info: Figures/LiIonBATpkt.pdf used on input line 200.
+Package pdftex.def Info: Figures/LiIonBATpkt.pdf used on input line 199.
 (pdftex.def)             Requested size: 199.59663pt x 199.59663pt.
 
-Overfull \vbox (0.92075pt too high) detected at line 200
+Overfull \vbox (0.92075pt too high) detected at line 199
  []
 
 [18
@@ -1229,10 +1229,10 @@ Overfull \vbox (0.92075pt too high) detected at line 200
 File: Figures/pktszndtmtocmp1.pdf Graphic file (type pdf)
 
 <use Figures/pktszndtmtocmp1.pdf>
-Package pdftex.def Info: Figures/pktszndtmtocmp1.pdf used on input line 201.
+Package pdftex.def Info: Figures/pktszndtmtocmp1.pdf used on input line 200.
 (pdftex.def)             Requested size: 199.59663pt x 199.59663pt.
 
-Overfull \vbox (0.92075pt too high) detected at line 201
+Overfull \vbox (0.92075pt too high) detected at line 200
  []
 
 [19
@@ -1262,11 +1262,11 @@ Package movie15 Warning: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 (movie15)                @@ superseded by `media9'.           @@
 (movie15)                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 251.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 251.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 250.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 250.
 (./Pres.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 251.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 251.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 250.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 250.
 Package rerunfilecheck Info: File `Pres.out' has not changed.
 (rerunfilecheck)             Checksum: 784D1FC751044D4BE772B2D6527016FC;703.
 
@@ -1274,7 +1274,7 @@ Package rerunfilecheck Info: File `Pres.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 251.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 250.
  ) 
 Here is how much of TeX's memory you used:
  21246 strings out of 493315
@@ -1289,7 +1289,7 @@ Here is how much of TeX's memory you used:
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></
 usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><
 /usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on Pres.pdf (23 pages, 1440901 bytes).
+Output written on Pres.pdf (23 pages, 1440838 bytes).
 PDF statistics:
  949 PDF objects out of 1000 (max. 8388607)
  876 compressed objects within 9 object streams
