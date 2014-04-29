@@ -8,7 +8,7 @@
 \beamer@subsectionintoc {2}{2}{Battery Behavior}{15}{0}{2}
 \beamer@subsectionintoc {2}{3}{Attack Simulations}{16}{0}{2}
 \beamer@sectionintoc {3}{Results and Analysis}{17}{0}{3}
-\beamer@subsectionintoc {3}{1}{Simulation Results}{20}{0}{3}
-\beamer@subsectionintoc {3}{2}{Mitigation Strategies}{20}{0}{3}
-\beamer@sectionintoc {4}{Conclusion}{22}{0}{4}
-\beamer@subsectionintoc {4}{1}{Future Work}{23}{0}{4}
+\beamer@subsectionintoc {3}{1}{Simulation Results}{18}{0}{3}
+\beamer@subsectionintoc {3}{2}{Mitigation Strategies}{22}{0}{3}
+\beamer@sectionintoc {4}{Conclusion}{24}{0}{4}
+\beamer@subsectionintoc {4}{1}{Future Work}{25}{0}{4}

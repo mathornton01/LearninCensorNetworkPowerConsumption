@@ -73,7 +73,7 @@
 \date[] 
 {CSE 4344: Networks and Distributed Systems\\
 Dallas, Texas\\
-April 26, 2014}
+April 29, 2014}
 
 
 \input{beamer-macros}
@@ -139,11 +139,8 @@ April 26, 2014}
 \subsection{Motivation}
 
 \begin{frame}{Problem}
-\begin{itemize}
-
-	\item \textbf{How do we defend against a wide range of Power Consumption Attacks?}
-	
-\end{itemize}
+\centering
+\textbf{\huge{How do we defend against a wide range of Power Consumption Attacks?}}	
 \end{frame}
 
 \section{Methodology}
@@ -173,6 +170,7 @@ April 26, 2014}
 	\item With weights varying from \textbf{0.1 mg} to \textbf{1 mg}
 	\item And Packet sizes varying from \textbf{2 bits} to \textbf{1 kb}
 	\item We got approximately \textbf{700} simulation results from NS3
+	\item packets were sent every \textbf{10 ms} in this simulation
 \end{itemize}
 \end{frame}
 
@@ -196,10 +194,42 @@ April 26, 2014}
 
 \section{Results and Analysis}
 
-	\titledFrameImage{Battery Analysis(1) - varied weights}{Figures/LiIonBATpkt.pdf}
-	\titledFrameImage{Comparing Attacks}{Figures/pktszndtmtocmp1.pdf}
 \subsection{Simulation Results}
 
+	\begin{frame}{Battery Analysis(1) - Compromise Statistics}
+	\centering
+		\begin{tabular}{| l | c | c | r |}
+			\hline
+			\textbf{B-Type} & \textbf{TTC(Min)}& \textbf{MTTC} & \textbf{TTC(Max)} \\
+			\hline
+			\hline
+			\textcolor{red}{Lead Acid} & 0.2789 s & 9.8798 s & 27.0307 s \\
+			\hline
+			\textcolor{blue}{Alkaline Long Life} & 0.7589 s & 27.1017 s & 74.1107 s \\
+			\hline
+			\textcolor{red}{Carbon-Zinc} &  0.2489 s & 8.7950 s & 24.0700 s \\
+			\hline
+			\textcolor{blue}{NiMH} & 0.6489 s & 23.0336 s & 62.9907 s \\
+			\hline
+			\textcolor{red}{Nickle-Cadmium} & 0.2689 s & 9.4734 s & 25.9207 s \\
+			\hline
+			\textcolor{blue}{Lithium-Ion} & 0.8689 s & 31.1701 s & 85.2400 s \\
+			\hline
+		\end{tabular}
+		\begin{itemize}
+			\item \textbf{B-Type} = Battery Acid Type
+			\item \textbf{TTC(Min)} = Minimum Time to Compromise w/ std attack
+			\item \textbf{MTTC} = Mean Time to Compromise w/ std attack
+			\item \textbf{TTC(Max)} = Maximum Time to Compromise w/ std attack
+			\item as expected Lithium Ion Battery is most effective
+		\end{itemize}
+	\end{frame}
+	\titledFrameImage{Battery Analysis(2) - Varied Weights}{Figures/LINBATTTC.pdf}
+	
+\begin{frame}{Comparing Attacks(1) - Compromise Statistics}
+
+\end{frame}
+	\titledFrameImage{Comparing Attacks}{Figures/pktszndtmtocmp1.pdf}
 \subsection{Mitigation Strategies}
 
 \begin{frame}{Previous Strategies}
@@ -225,6 +255,8 @@ April 26, 2014}
 
 \begin{itemize}
 
+	\item Because the Routing attack we examined is much more potent examination of routing procedures should be carfully examined
+	\item the possibility of placing nodes so they do not have to route should be considered for small crucial WSNs
 	\item Targeted the root problem of all Power Consumption attacks: \textbf{pre-defined battery life}
 	\item Installation of solar panels and other similar power regeneration devices.
 	\item Attacks can still be mounted on the network, but would have to fight a endlessly renewing power source 
@@ -247,4 +279,9 @@ April 26, 2014}
 
 \end{itemize}
 \end{frame}	
+
+\begin{frame}{Thanks}
+	\centering
+	\huge{Thanks for Listening! Questions?}
+\end{frame}
 \end{document}
