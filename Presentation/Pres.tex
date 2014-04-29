@@ -99,37 +99,42 @@ April 26, 2014}
 \section{Introduction}
 \subsection{Topics}
 
-\begin{frame}{Brief Intro to Wireless Sensor Networks(WSNs)}
+\begin{frame}{Wireless Sensor Networks(WSNs)}
 \begin{itemize}
 	\item A \textbf{wireless sensor network(WSN)} is a network of \textbf{Sensor Nodes}
 	\item \textbf{Sensor Nodes} send and receive wide varieties of data.
-	\item \textbf{Sensor Nodes} are developed in bulk for mass deployment 
-	\item \textbf{Sensor Nodes} operate in one of two states: 
+	\item \textbf{Sensor Nodes} generally operate in one of two states: 
 	\begin{itemize}
-		\item \textbf{Sleep Mode} - less power draw, can't receive and transmit 
-		\item \textbf{Active Mode} - more power draw, can receive and transmit
+		\item \textbf{Sleep Mode} - less power draw, but can't receive and transmit 
+		\item \textbf{Active Mode} - more power draw, and can receive and transmit
 	\end{itemize}
-	\item \textbf{WSNs} can be applied to many problems
 \end{itemize}
 \end{frame}
 
-\titledFrameImage{WSN examples (1)}{Figures/Portada_490px.jpg}
-\titledFrameImage{WSN examples (2)}{Figures/forest_fire_detection.png}
-\titledFrameImage{WSN examples (3)}{Figures/security_sensor.png}
+\titledFrameImage{WSN examples (1) - p.H. and flow}{Figures/Portada_490px.jpg}
+\titledFrameImage{WSN examples (2) - fire detection and prevention}{Figures/forest_fire_detection.png}
+\titledFrameImage{WSN examples (3) - security systems}{Figures/security_sensor.png}
 
 \begin{frame}{Attacks on WSN power supplies}
 \begin{itemize}
+	\item \textbf{Sensor Nodes} are developed in bulk for mass deployment 
 	\item Bulk production has robbed WSNs of more robust \textbf{battery lives}
-	\item The nature of WSNs makes them easy targets for \textbf{Power Consumption Attacks}
-	\item A \textbf{Power Consumption Attack} exploits the small battery life of Sensor Nodes by draining the battery
-	\item This attack can have devastating effects on the WSN
-	\item \textbf{Power Consumption Attacks} are performed in multiple ways
+	\item limited battery lives make sensor nodes easy targets for \textbf{Power Consumption Attacks}
+	\item A \textbf{Power Consumption Attack} drains the battery power of sensor nodes by forcing \textbf{meaningless active mode time}.
+	\item Attackers hope to gain something by compromising nodes:
+	\begin{itemize}
+		\item Protocol information for other attacks
+		\item temporary system downing
+		\item permanent system downing
+		\item competitive advantage
+	\end{itemize}
+	\item Here we show some of our attack models
 \end{itemize}	
 \end{frame}
 
-\titledFrameImage{Power Consumption attack models (1)}{Figures/AModel1.png}
-\titledFrameImage{Power Consumption attack models (2)}{Figures/AModel2.png}
-\titledFrameImage{Power Consumption attack models (3)}{Figures/AModel3.png}
+\titledFrameImage{Attack Models (1) - standard denial of sleep}{Figures/AModel1.png}
+\titledFrameImage{Attack Models (2) - inverse denial of sleep}{Figures/AModel2.png}
+\titledFrameImage{Attack Models (3) - routing power draw}{Figures/AModel3.png}
 
 \subsection{Motivation}
 
@@ -143,6 +148,9 @@ April 26, 2014}
 
 \section{Methodology}
 
+\subsection{Overview}
+\begin{frame}{Overview}
+\end{frame}
 \subsection{Battery Behavior}
 
 \begin{frame}{Battery Tests}
