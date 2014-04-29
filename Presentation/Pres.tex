@@ -227,9 +227,24 @@ April 29, 2014}
 	\titledFrameImage{Battery Analysis(2) - Varied Weights}{Figures/LINBATTTC.pdf}
 	
 \begin{frame}{Comparing Attacks(1) - Compromise Statistics}
+\centering
+	\begin{tabular}{| l | c | c | r |}
+	\hline
+	\textbf{A-Type} & \textbf{TTC(Min)} & \textbf{MTTC} & \textbf{TTC(Max)} \\
+	\hline
+	\hline
+	\textcolor{red}{Denial of Sleep} &  0.02558 s & 14.49850 s & 208.50587 s\\
+	\hline
+	\textcolor{blue}{Routing Power Draw} &  0.02558 s & 3.16868 s & 104.55439 s\\
+	\hline
+	\end{tabular}
+	\begin{itemize}
+	\item So a WSN distributor would be wise to fear the routing attack more so than a standard denial of sleep
+	\end{itemize}
+	
 
 \end{frame}
-	\titledFrameImage{Comparing Attacks}{Figures/pktszndtmtocmp1.pdf}
+	\titledFrameImage{Comparing Attacks(2) - Linear Regressions}{Figures/pktszndtmtocmp1.pdf}
 \subsection{Mitigation Strategies}
 
 \begin{frame}{Previous Strategies}
