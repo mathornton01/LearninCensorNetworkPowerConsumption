@@ -2,14 +2,14 @@
 
 \subsection{Denial-of-Sleep Attacks}
  
-Firstly, it is important to note that the term ``Denial-of-Sleep attack" refers to a general class of potential attacks. Second, this term is used to describe a sub-category of the Denial-of-service attack. A Denial-of-Sleep 
+Firstly, it is important to note that the term ``Denial-of-Sleep attack" refers to a general class of potential attacks. Second, this term is used to describe a sub-category of the Denial-of-service attacks. A Denial-of-Sleep 
 attack is defined as an attack that targets the energy supply of wireless nodes causing them to consume power rapidly. As Raymond, and Midkiff state in their paper, ``Denial-of-Service in Wireless Sensor Networks: 
-Attacks and Defenses", a denial of sleep attack specifically targets the primary power-draws in Wireless Sensor Networks\cite{4431860}. In their paper: ``Fighting Insomnia: a Secure Wake-up Scheme for Wireless Sensor Networks" 
+Attacks and Defenses", a denial-of-sleep attack specifically targets the primary power-draws in Wireless Sensor Networks\cite{4431860}. In their paper: ``Fighting Insomnia: a Secure Wake-up Scheme for Wireless Sensor Networks" 
 R. Falk, and H. Hof Discuss the ways that this attack is orchestrated\cite{5211020}. 
 
-In a wireless sensor network the nodes generally have an ``awake" state and a ``sleep" state\cite{5211020}. While The node is in the ``awake" state it's wireless radio is turned on, and it is able to receive and send messages. 
-Whereas a node that is asleep will only  sense, and calculate. In the sleep state the receiver will not be active, and therefore the node's power draw is much smaller, because the power to calculate and sense is negligable 
-compared to the power required to receive and send transmissions. The node is awakened in various ways depending on the design of the network, the network proposed by R. Falk et al. had a low power wake-up radio that caused nodes
+In a wireless sensor network the nodes generally have an ``awake" state and a ``sleep" state\cite{5211020}. While The node is in the ``awake" state, it's wireless radio is turned on, and it is able to receive and send messages. 
+Whereas a node that is asleep will only sense, and calculate. In the sleep state the receiver will not be active, and therefore the node's power draw is much smaller, because the power to calculate and sense is negligible 
+compared to the power required to receive and send transmissions. The node is awakened in various ways depending on the design of the network; the network proposed by R. Falk et al. had a low power wake-up radio that caused nodes
 to switch to the "awake" state when they received a signal. 
 
 Denial-of Sleep attacks are effective against wireless sensor network nodes because they usually have smaller power supplies due to the need to be mass produced, and deployed in large numbers\cite{4602623}. Wireless sensor 
@@ -19,7 +19,7 @@ sleep and denial-of-service attacks.
 The perpetration of these attacks can take on many forms, several of which will be discussed in this paper. The first we will discuss is the most simplistic: an attacker targets one node by sending many packets and forcing the
 node to remain in the ``awake" state, because it is continually receiving data. This attack was simulated with varrying packet sizes, and batteries to analyze the relationship, we will call it the ``standard denial of sleep attack". A second attack that will be discussed is really a 
 slight variation of the first, which takes into account the attackers knowledge of the protocols in use and by which an attacker may increase that knowledge\cite{4476299}. A third attack uses an indirect approach to power 
-consumption by sending a transmission from the attacker node, to an arbitrary network node, which gets routed by the targetted node, we refer to this attack as the ``routing power draw attack". If the model were expanded to deal with many nodes on a network, the attacker might try to 
+consumption by sending a transmission from the attacker node, to an arbitrary network node, which gets routed by the targetted node. We refer to this attack as the ``routing power draw attack". If the model were expanded to deal with many nodes on a network, the attacker might try to 
 find the longest path in order to compromise the most nodes. Vasserman and Nicholas Hopper call this attack a stretch attack in their paper ``Vampire Attacks: Draining Life from Wireless Ad Hoc Sensor Networks."\cite{6112758}. 
 The fourth form of denial of sleep attack that will be discussed is known as the ``droplet" attack, which takes advantage of error checking on a noisy channel in wireless sensor networks\cite{6680296}. The final form we will be 
 discussing in this paper is the transmission of data from the attacker to a network of nodes which have a minimum bounded transmission power to help avoid a noisy channel.  
@@ -41,7 +41,7 @@ The fourth attack discussed is the ``droplet" attack, which takes into account e
  allowing for handling of address in the hardware and dynamic channel switching to avoid an attacker on a single channel.
 
 The fifth attack discuses a network which is in a noisy environment and has a minimum threshold for transmission power, which could be attacked by contributing a substantial amount to the noise level in the area, forcing the nodes
-to use more power when they transmit messages regularly. A potential mitigation strategy is to maximum noise level before all nodes halt awake state and go to sleep until a single node's low power receiver detects lower noise levels
-then it wakes up and wakes the entire network with transmissions. Using jamming protection protocols and interval scheduling as up above, also helps to mitigate this problem\cite{4476299}
+to use more power when they transmit messages regularly. A potential mitigation strategy is to establish a maximum noise level that when reached causes all nodes halt awake state and go to sleep until a single node's low power receiver detects lower noise levels.
+Then it wakes up and wakes the entire network with transmissions. Using jamming protection protocols and interval scheduling as up above, also helps to mitigate this problem\cite{4476299}
  
    
