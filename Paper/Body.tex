@@ -48,5 +48,15 @@ Probably the biggest take away from this graph is the fact that all battery weig
 
 In our second simulation we tested the time to compromise a sensor node for two of the previously discussed attack, the standard denial-of-sleep attack and as well as the routing power draw attack. The table below shows some of the preliminary results from the second simulation. 
 
+\begin{figure}[H]
+\caption{Attack Comparison Table} 
+\input{attackComp}
+\end{figure}
 
+From the table we noticed (not surprisingly) that the routing power draw attack compromised the sensor nodes much more  quickly than the standard denial-of-sleep attack. We also plotted linear regressions of the time to compromise for each type of attack as the packet size increases. As we expected from the table the routing power consumption attacks is simply a linear transformation upwards of the standard denial of sleep attack, meaning that the derivatives of the two types of attacks are equivalent. That said, the rate of change with respect to packet size may be equivalent, but the linear transformation upwards shows a strong indication that the routing power draw attack is more potent, and worthy of more consideration on the part of WSN employers. 
 
+\begin{figure}[H]
+\caption{Attack Comparison Chart}
+\includegraphics[width=\linewidth]{Figures/pktszndtmtocmp1.pdf}
+\end{figure}
+	
