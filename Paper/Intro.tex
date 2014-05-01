@@ -2,12 +2,12 @@
 
 \subsection{Denial-of-Sleep Attacks}
  
-Firstly, it is important to note that the term "Denial-of-Sleep attack" refers to a general class of potential attacks. Second, this term is used to doescribe a sub-category of the Denial-of-service attack. A Denial-of-Sleep 
-attack is defined as an attack that targets the energy supply of wireless nodes causing them to consume power rapidly. As Raymond, and Midkiff state in their paper, "Denial-of-Service in Wireless Sensor Networks: 
-Attacks and Defenses", a denial of sleep attack specifically targets the primary power-draws in Wireless Sensor Networks\cite{4431860}. In their paper: "Fighting Insomnia: a Secure Wake-up Scheme for Wireless Sensor Networks" 
+Firstly, it is important to note that the term ``Denial-of-Sleep attack" refers to a general class of potential attacks. Second, this term is used to describe a sub-category of the Denial-of-service attack. A Denial-of-Sleep 
+attack is defined as an attack that targets the energy supply of wireless nodes causing them to consume power rapidly. As Raymond, and Midkiff state in their paper, ``Denial-of-Service in Wireless Sensor Networks: 
+Attacks and Defenses", a denial of sleep attack specifically targets the primary power-draws in Wireless Sensor Networks\cite{4431860}. In their paper: ``Fighting Insomnia: a Secure Wake-up Scheme for Wireless Sensor Networks" 
 R. Falk, and H. Hof Discuss the ways that this attack is orchestrated\cite{5211020}. 
 
-In a wireless sensor network the nodes generally have an "awake" state and a "sleep" state\cite{5211020}. While The node is in the "awake" state it's wireless radio is turned on, and it is able to receive and send messages. 
+In a wireless sensor network the nodes generally have an ``awake" state and a ``sleep" state\cite{5211020}. While The node is in the ``awake" state it's wireless radio is turned on, and it is able to receive and send messages. 
 Whereas a node that is asleep will only  sense, and calculate. In the sleep state the receiver will not be active, and therefore the node's power draw is much smaller, because the power to calculate and sense is negligable 
 compared to the power required to receive and send transmissions. The node is awakened in various ways depending on the design of the network, the network proposed by R. Falk et al. had a low power wake-up radio that caused nodes
 to switch to the "awake" state when they received a signal. 
@@ -17,18 +17,18 @@ nodes are generally designed simplistically for ease of use and set up, and as s
 sleep and denial-of-service attacks.
 
 The perpetration of these attacks can take on many forms, several of which will be discussed in this paper. The first we will discuss is the most simplistic: an attacker targets one node by sending many packets and forcing the
-node to remain in the "awake" state, because it is continually receiving data. This attack was simulated with varrying packet sizes, and batteries to analyze the relationship. A second attack that will be discussed is really a 
+node to remain in the ``awake" state, because it is continually receiving data. This attack was simulated with varrying packet sizes, and batteries to analyze the relationship, we will call it the ``standard denial of sleep attack". A second attack that will be discussed is really a 
 slight variation of the first, which takes into account the attackers knowledge of the protocols in use and by which an attacker may increase that knowledge\cite{4476299}. A third attack uses an indirect approach to power 
-consumption by sending a transmission from the attacker node, to an arbitrary network node, which gets routed by the targetted node. If the model were expanded to deal with many nodes on a network, the attacker might try to 
-find the longest path in order to compromise the most nodes. Vasserman and Nicholas Hopper call this attack a stretch attack in their paper "Vampire Attacks: Draining Life from Wireless Ad Hoc Sensor Networks."\cite{6112758}. 
-The fourth form of denial of sleep attack that will be discussed is known as the "droplet" attack, which takes advantage of error checking on a noisy channel in wireless sensor networks\cite{6680296}. The final form we will be 
+consumption by sending a transmission from the attacker node, to an arbitrary network node, which gets routed by the targetted node, we refer to this attack as the ``routing power draw attack". If the model were expanded to deal with many nodes on a network, the attacker might try to 
+find the longest path in order to compromise the most nodes. Vasserman and Nicholas Hopper call this attack a stretch attack in their paper ``Vampire Attacks: Draining Life from Wireless Ad Hoc Sensor Networks."\cite{6112758}. 
+The fourth form of denial of sleep attack that will be discussed is known as the ``droplet" attack, which takes advantage of error checking on a noisy channel in wireless sensor networks\cite{6680296}. The final form we will be 
 discussing in this paper is the transmission of data from the attacker to a network of nodes which have a minimum bounded transmission power to help avoid a noisy channel.  
 
 \subsection{Existing Mitigation Strategies}
 
 The most basic model that we discussed above describes a single attacker with unlimited power, and no knowledge of the security protocols used who is continuously sending transmissions to a wireless sensor node that has no lower 
-noise bound, no random sleeping patterns, and is currently awake. This type of attack truly "Denies" the node the ability to sleep, as the node would sleep when it was no longer receiving transmissions. There are many mitigation
-strategies that would effectively reduce this risk including: a low power wake-up radio\{5211020}, a predecided interval scheduling for transmissions and receptions among the nodes \cite{4476299}, and the method we will be testing
+noise bound, no random sleeping patterns, and is currently awake. This type of attack truly ``Denies" the node the ability to sleep, as the node would sleep when it was no longer receiving transmissions. There are many mitigation
+strategies that would effectively reduce this risk including: a low power wake-up radio\cite{5211020}, a previously decided interval scheduling for transmissions and receptions among the nodes \cite{4476299}, and the method we will be testing
 is simply using a larger battery.
 
 The second attack discussed above has the same assumptions as the first, however the attacker knows either nothing or has limited information about the protocols used by the network. This attack was introduced in a paper by
@@ -37,7 +37,7 @@ Raymond et al. where they discussed several mitigation strategies at length\cite
 The third attack by which the attacker targets a node that is used as a router can be mitigated by keeping track of the source of the traffic and forcing the node to go to sleep after so many messages are received from the same
 source consecutively within a certain short amount of time. 
 
-The fourth attack discussed is the "droplet" attack, which takes into account error checking in its effort to deplete the target nodes energy supply. He and Voigt discussed three specific mitigation strategies, among which were:
+The fourth attack discussed is the ``droplet" attack, which takes into account error checking in its effort to deplete the target nodes energy supply. He and Voigt discussed three specific mitigation strategies, among which were:
  allowing for handling of address in the hardware and dynamic channel switching to avoid an attacker on a single channel.
 
 The fifth attack discuses a network which is in a noisy environment and has a minimum threshold for transmission power, which could be attacked by contributing a substantial amount to the noise level in the area, forcing the nodes
