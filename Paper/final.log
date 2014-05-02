@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  1 MAY 2014 22:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  1 MAY 2014 23:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -290,23 +290,26 @@ File: Figures/AModel1.png Graphic file (type png)
 Package pdftex.def Info: Figures/AModel1.png used on input line 13.
 (pdftex.def)             Requested size: 240.0pt x 156.31718pt.
 
-<Figures/AModel2.png, id=13, 653.3208pt x 424.4658pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+<Figures/AModel2.png, id=16, 653.3208pt x 424.4658pt>
 File: Figures/AModel2.png Graphic file (type png)
 
 <use Figures/AModel2.png>
 Package pdftex.def Info: Figures/AModel2.png used on input line 20.
 (pdftex.def)             Requested size: 240.0pt x 155.92938pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2 <./Figures/AModel1.png>] <Figures/AModel3.png, id=19, 687.5286pt x 503.481p
-t>
+ <Figures/AModel3.png, id=17, 687.5286pt x 503.481pt>
 File: Figures/AModel3.png Graphic file (type png)
 
 <use Figures/AModel3.png>
 Package pdftex.def Info: Figures/AModel3.png used on input line 27.
 (pdftex.def)             Requested size: 240.0pt x 175.75235pt.
- (./batTable.tex)
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+(./batTable.tex)
 Overfull \hbox (16.2124pt too wide) in paragraph at lines 1--38
 [][]
  []
@@ -316,28 +319,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--38
 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-<Figures/LINBATTTC.pdf, id=20, 505.89pt x 505.89pt>
+<Figures/LINBATTTC.pdf, id=18, 505.89pt x 505.89pt>
 File: Figures/LINBATTTC.pdf Graphic file (type pdf)
 
 <use Figures/LINBATTTC.pdf>
 Package pdftex.def Info: Figures/LINBATTTC.pdf used on input line 44.
 (pdftex.def)             Requested size: 240.0pt x 239.99919pt.
- (./attackComp.tex) [3 <./Figures/AModel2.png> <./Figures/AModel3.png> <./Figur
-es/LINBATTTC.pdf>]
-<Figures/pktszndtmtocmp1.pdf, id=32, 505.89pt x 505.89pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3 <./Figures/AModel1.png> <./Figures/AModel2.png> <./Figures/AModel3.png>]
+(./attackComp.tex) <Figures/pktszndtmtocmp1.pdf, id=26, 505.89pt x 505.89pt>
 File: Figures/pktszndtmtocmp1.pdf Graphic file (type pdf)
 
 <use Figures/pktszndtmtocmp1.pdf>
 Package pdftex.def Info: Figures/pktszndtmtocmp1.pdf used on input line 60.
 (pdftex.def)             Requested size: 240.0pt x 239.99919pt.
-) (./Conclusion.tex)
-Underfull \vbox (badness 1558) has occurred while \output is active []
 
- [4 <./Figures/pktszndtmtocmp1.pdf>] (./final.bbl) [5] (./final.aux) ) 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+)
+(./Conclusion.tex [4 <./Figures/LINBATTTC.pdf> <./Figures/pktszndtmtocmp1.pdf>]
+) (./final.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5])
+[6
+
+] (./final.aux) ) 
 Here is how much of TeX's memory you used:
  2663 strings out of 493315
  35082 string characters out of 6137904
@@ -345,20 +354,19 @@ Here is how much of TeX's memory you used:
  6034 multiletter control sequences out of 15000+600000
  39202 words of font info for 54 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 41i,9n,28p,1783b,256s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/loc
-al/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2013
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2013/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2013/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2013/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2013/texmf-di
-st/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2013/texmf-dist/font
-s/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1
-/urw/times/utmb8a.pfb>
-Output written on final.pdf (5 pages, 660171 bytes).
+ 41i,9n,28p,1784b,256s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.en
+c}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb>
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr
+/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/l
+ocal/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/te
+xlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2
+013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
+Output written on final.pdf (6 pages, 661546 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 73 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

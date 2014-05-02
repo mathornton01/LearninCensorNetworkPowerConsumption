@@ -272,29 +272,29 @@ lines(x = log(NiCaddf9$PktsSize)/log(2), y = NiCaddf9$PktsSent, type = 'l', col 
 lines(x = log(NiCaddf1$PktsSize)/log(2), y = NiCaddf1$PktsSent, type = 'l', col = 'gold')
 legend("topright", weights, cex=0.8, col=graph_cols, lwd=2);
 dev.off()
-pdf("LiIonBATpktnonl.pdf")
+pdf("LINBATTTC.pdf")
 LiIondf <- df[df$BatType == 5,]
-LiIondf1 <- LiIondf[LiIondf$Weight < 0.0000002, ]
-LiIondf2 <- LiIondf[LiIondf$Weight < 0.0000003 & LiIondf$Weight > 0.0000002, ]
-LiIondf3 <- LiIondf[LiIondf$Weight == 0.0000003, ]
-LiIondf4 <- LiIondf[LiIondf$Weight < 0.00000049 & LiIondf$Weight >0.0000003 , ]
-LiIondf5 <- LiIondf[LiIondf$Weight == 0.0000005, ]
-LiIondf6 <- LiIondf[LiIondf$Weight == 0.0000006, ]
-LiIondf7 <- LiIondf[LiIondf$Weight < 0.0000008 & LiIondf$Weight > 0.0000007, ]
-LiIondf8 <- LiIondf[LiIondf$Weight < 0.0000009 & LiIondf$Weight > 0.0000008, ]
-LiIondf9 <- LiIondf[LiIondf$Weight < 0.000001 & LiIondf$Weight > 0.0000009, ]
-LiIondf10 <- LiIondf[LiIondf$Weight == 0.000001, ]
-plot(x = log(LiIondf10$PktsSize)/log(2), y = LiIondf10$PktsSent, main = "Lithium Ion Batteries",xlab = "Packet Size(lg(bytes))", ylab = "Number of Packets Received", type = 'l', col = 'blue')
-lines(x = log(LiIondf2$PktsSize)/log(2), y = LiIondf2$PktsSent, type = 'l', col = 'red')
-lines(x = log(LiIondf3$PktsSize)/log(2), y = LiIondf3$PktsSent, type = 'l', col = 'green')
-lines(x = log(LiIondf4$PktsSize)/log(2), y = LiIondf4$PktsSent, type = 'l', col = 'orange')
-lines(x = log(LiIondf5$PktsSize)/log(2), y = LiIondf5$PktsSent, type = 'l', col = 'yellow')
-lines(x = log(LiIondf6$PktsSize)/log(2), y = LiIondf6$PktsSent, type = 'l', col = 'purple')
-lines(x = log(LiIondf7$PktsSize)/log(2), y = LiIondf7$PktsSent, type = 'l', col = 'pink')
-lines(x = log(LiIondf8$PktsSize)/log(2), y = LiIondf8$PktsSent, type = 'l', col = 'black')
-lines(x = log(LiIondf9$PktsSize)/log(2), y = LiIondf9$PktsSent, type = 'l', col = 'brown')
-lines(x = log(LiIondf1$PktsSize)/log(2), y = LiIondf1$PktsSent, type = 'l', col = 'gold')
-legend("topright", weights, cex=0.8, col=graph_cols, lwd=2);
+LiIondf1 <- LiIondf[1:11, ]
+LiIondf2 <- LiIondf[12:22, ]
+LiIondf3 <- LiIondf[23:33, ]
+LiIondf4 <- LiIondf[34:44, ]
+LiIondf5 <- LiIondf[45:55, ]
+LiIondf6 <- LiIondf[56:66, ]
+LiIondf7 <- LiIondf[67:77, ]
+LiIondf8 <- LiIondf[78:88, ]
+LiIondf9 <- LiIondf[89:99, ]
+LiIondf10 <- LiIondf[100:110, ]
+plot(x = log(LiIondf10$PktsSize)/log(2), y = LiIondf10$DrainTime, main = "Lithium Ion Batteries",xlab = "Packet Size(lg(bytes))", ylab = "Time to Compromise (seconds)", type = 'l', col = 'blue')
+lines(x = log(LiIondf2$PktsSize)/log(2), y = LiIondf2$DrainTime, type = 'l', col = 'red')
+lines(x = log(LiIondf3$PktsSize)/log(2), y = LiIondf3$DrainTime, type = 'l', col = 'green')
+lines(x = log(LiIondf4$PktsSize)/log(2), y = LiIondf4$DrainTime, type = 'l', col = 'orange')
+lines(x = log(LiIondf5$PktsSize)/log(2), y = LiIondf5$DrainTime, type = 'l', col = 'yellow')
+lines(x = log(LiIondf6$PktsSize)/log(2), y = LiIondf6$DrainTime, type = 'l', col = 'purple')
+lines(x = log(LiIondf7$PktsSize)/log(2), y = LiIondf7$DrainTime, type = 'l', col = 'pink')
+lines(x = log(LiIondf8$PktsSize)/log(2), y = LiIondf8$DrainTime, type = 'l', col = 'black')
+lines(x = log(LiIondf9$PktsSize)/log(2), y = LiIondf9$DrainTime, type = 'l', col = 'brown')
+lines(x = log(LiIondf1$PktsSize)/log(2), y = LiIondf1$DrainTime, type = 'l', col = 'gold')
+legend("topright", weights, cex=0.8, col=rev(graph_cols), lwd=2);
 dev.off()
 
 
