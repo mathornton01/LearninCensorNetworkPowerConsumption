@@ -1,0 +1,129 @@
+\begin{thebibliography}{10}
+
+\bibitem{Bradonjic_Hagberg_Feng_2011}
+Milan [Los Alamos National~Laboratory] Bradonjic, Aric [Los Alamos
+  National~Laboratory] Hagberg, and Pan [Los Alamos National~Laboratory] Feng.
+\newblock Performance of wireless sensor networks under random node failures.
+\newblock Jan 2011.
+
+\bibitem{1495974}
+M.~Brownfield, Yatharth Gupta, and N.~Davis.
+\newblock Wireless sensor network denial of sleep attack.
+\newblock In {\em Information Assurance Workshop, 2005. IAW '05. Proceedings
+  from the Sixth Annual IEEE SMC}, pages 356--364, June 2005.
+
+\bibitem{5283239}
+Chen Chen, Li~Hui, Qingqi Pei, Lv~Ning, and Peng Qingquan.
+\newblock An effective scheme for defending denial-of-sleep attack in wireless
+  sensor networks.
+\newblock In {\em Information Assurance and Security, 2009. IAS '09. Fifth
+  International Conference on}, volume~2, pages 446--449, Aug 2009.
+
+\bibitem{5211020}
+R.~Falk and H.~J Hof.
+\newblock Fighting insomnia: A secure wake-up scheme for wireless sensor
+  networks.
+\newblock In {\em Emerging Security Information, Systems and Technologies,
+  2009. SECURWARE '09. Third International Conference on}, pages 191--196, June
+  2009.
+
+\bibitem{Harvey_Kyker_2005}
+Matthew~R. Harvey and Ronald~D. Kyker.
+\newblock {\em Development of a photovoltaic power supply for wireless sensor
+  networks.}
+\newblock Jun 2005.
+
+\bibitem{6680296}
+Zhitao He and T.~Voigt.
+\newblock Droplet: A new denial-of-service attack on low power wireless sensor
+  networks.
+\newblock In {\em Mobile Ad-Hoc and Sensor Systems (MASS), 2013 IEEE 10th
+  International Conference on}, pages 542--550, Oct 2013.
+
+\bibitem{5949172}
+Ching-Tsung Hsueh, Chih-Yu Wen, and Yen-Chieh Ouyang.
+\newblock A secure scheme for power exhausting attacks in wireless sensor
+  networks.
+\newblock In {\em Ubiquitous and Future Networks (ICUFN), 2011 Third
+  International Conference on}, pages 258--263, June 2011.
+
+\bibitem{6425177}
+Ching-Tsung Hsueh, Chih-Yu Wen, and Yen-Chieh Ouyang.
+\newblock Two-tier receiver-initiated secure scheme for hierarchical wireless
+  sensor networks.
+\newblock In {\em ITS Telecommunications (ITST), 2012 12th International
+  Conference on}, pages 254--258, Nov 2012.
+
+\bibitem{6104548}
+Xu~Huang, M.~Ahmed, and D.~Sharma.
+\newblock A novel algorithm for protecting from internal attacks of wireless
+  sensor networks.
+\newblock In {\em Embedded and Ubiquitous Computing (EUC), 2011 IFIP 9th
+  International Conference on}, pages 344--349, Oct 2011.
+
+\bibitem{6164340}
+Xu~Huang, M.~Ahmed, and D.~Sharma.
+\newblock Timing control for protecting from internal attacks in wireless
+  sensor networks.
+\newblock In {\em Information Networking (ICOIN), 2012 International Conference
+  on}, pages 7--12, Feb 2012.
+
+\bibitem{4561146}
+S.~Junnila, I.~Defee, M.~Zakrzewski, A.-M. Vainio, and J.~Vanhala.
+\newblock Uute home network for wireless health monitoring.
+\newblock In {\em Biocomputation, Bioinformatics, and Biomedical Technologies,
+  2008. BIOTECHNO '08. International Conference on}, pages 125--130, June 2008.
+
+\bibitem{6558065}
+V.C. Manju, S.L. Senthil~Lekha, and M.~Sasi~kumar.
+\newblock Mechanisms for detecting and preventing denial of sleep attacks on
+  wireless sensor networks.
+\newblock In {\em Information Communication Technologies (ICT), 2013 IEEE
+  Conference on}, pages 74--77, April 2013.
+
+\bibitem{4476299}
+David~R. Raymond, R.C. Marchany, M.I. Brownfield, and S.F. Midkiff.
+\newblock Effects of denial-of-sleep attacks on wireless sensor network mac
+  protocols.
+\newblock {\em Vehicular Technology, IEEE Transactions on}, 58(1):367--380, Jan
+  2009.
+
+\bibitem{4267552}
+David~R. Raymond, R.C. Marchany, and S.F. Midkiff.
+\newblock Scalable, cluster-based anti-replay protection for wireless sensor
+  networks.
+\newblock In {\em Information Assurance and Security Workshop, 2007. IAW '07.
+  IEEE SMC}, pages 127--134, June 2007.
+
+\bibitem{4455251}
+David~R. Raymond and S.F. Midkiff.
+\newblock Clustered adaptive rate limiting: Defeating denial-of-sleep attacks
+  in wireless sensor networks.
+\newblock In {\em Military Communications Conference, 2007. MILCOM 2007. IEEE},
+  pages 1--7, Oct 2007.
+
+\bibitem{4431860}
+David~R. Raymond and S.F. Midkiff.
+\newblock Denial-of-service in wireless sensor networks: Attacks and defenses.
+\newblock {\em Pervasive Computing, IEEE}, 7(1):74--81, Jan 2008.
+
+\bibitem{5541527}
+R.~Rughinis and L.~Gheorghe.
+\newblock Storm control mechanism in wireless sensor networks.
+\newblock In {\em Roedunet International Conference (RoEduNet), 2010 9th},
+  pages 430--435, June 2010.
+
+\bibitem{4602623}
+Vladimir Shakhov and V.~Popkov.
+\newblock Performance analysis of sleeping attacks in wireless sensor networks.
+\newblock In {\em Computational Technologies in Electrical and Electronics
+  Engineering, 2008. SIBIRCON 2008. IEEE Region 8 International Conference on},
+  pages 418--420, July 2008.
+
+\bibitem{6112758}
+E.Y. Vasserman and N.~Hopper.
+\newblock Vampire attacks: Draining life from wireless ad hoc sensor networks.
+\newblock {\em Mobile Computing, IEEE Transactions on}, 12(2):318--332, Feb
+  2013.
+
+\end{thebibliography}

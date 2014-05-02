@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: final.aux
+The style file: plain.bst
+Database file #1: SNet.bib
+Repeated entry---line 193 of file SNet.bib
+ : @article{4431860
+ :                 ,
+I'm skipping whatever remains of this entry
+Database file #2: bibContent.bib
+Repeated entry---line 1 of file bibContent.bib
+ : @article{4476299
+ :                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 14 of file bibContent.bib
+ : @inproceedings{6558065
+ :                       ,
+I'm skipping whatever remains of this entry
+Warning--empty journal in Bradonjic_Hagberg_Feng_2011
+Warning--empty publisher in Harvey_Kyker_2005
+You've used 19 entries,
+            2118 wiz_defined-function locations,
+            605 strings with 7813 characters,
+and the built_in function-call counts, 8008 in all, are:
+= -- 762
+> -- 327
+< -- 15
++ -- 130
+- -- 108
+* -- 530
+:= -- 1181
+add.period$ -- 57
+call.type$ -- 19
+change.case$ -- 110
+chr.to.int$ -- 0
+cite$ -- 21
+duplicate$ -- 367
+empty$ -- 679
+format.name$ -- 108
+if$ -- 1818
+int.to.chr$ -- 0
+int.to.str$ -- 19
+missing$ -- 20
+newline$ -- 98
+num.names$ -- 38
+pop$ -- 153
+preamble$ -- 1
+purify$ -- 92
+quote$ -- 0
+skip$ -- 307
+stack$ -- 0
+substring$ -- 510
+swap$ -- 149
+text.length$ -- 15
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 74
+warning$ -- 2
+while$ -- 69
+width$ -- 21
+write$ -- 208
+(There were 3 error messages)

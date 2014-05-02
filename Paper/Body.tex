@@ -1,12 +1,12 @@
 \section{Results and Analysis}
 \subsection{Simulation Methodology}
-The key problem that we address is the mitigation of power consumption attacks on individual sensor nodes in Wireless Sensor Networks.  One central issue underlies the surface details of all wireless sensor nodes: A limited power supply. The nature of wireless sensor networks is such that it is likely optimal to draw power remotely, from a source such as a battery. The battery would also have to be quite small so it would not impede the actual duties of the node and take up space making the manufacturing process more costly, and less effective. 
+The key problem that we address is the mitigation of power consumption attacks on individual sensor nodes in wireless sensor networks.  One central issue underlies the surface details of all wireless sensor nodes: a limited power supply. The nature of wireless sensor networks is such that it is likely optimal to draw power remotely, from a source such as a battery. The battery would also have to be quite small so it would not impede the actual duties of the node and take up space thereby rendering manufacture more costly and less effective. 
 
-We turned immediately to analyze the source from which the power was being drawn. Using a piece of software called NS3, we simulated the time required by the attacker to compromise a wireless radio by sending packets at a rate of 1/10 ms. The wireless radios were equipped with batteries that contained a certain internal acid. The acids tested are seen in the table in the next section. The weight of each battery was varied from 0.1 mg to 1 mg, and 660 simulation results were collected. 
+We turned immediately to analyze the source from which the power was being drawn. Using a piece of software called NS3, we simulated the time required by the attacker to compromise a wireless radio by sending packets. The wireless radios were equipped with batteries that contained a certain internal acid. The acids tested are seen in the table in the next section. The weight of each battery was varied from 0.1 mg to 1 mg and 660 simulation results were collected. 
 
 Next, to gain a more thorough understanding of the implications of different kinds of power consumption attacks that are performed on WSNs, we created a simulation environment in python, in which the user could define: the packet size (in bits), the initial energy in each node (in Joules), the power required to transmit packets (in Watts), the power required to receive packets (in watts), the speed of the transmission radios (in bits per second). 
 
-As stated in the introduction we specifically examined two specific kinds of attacks, the standard denial of sleep attack and the routing attack. Below are diagrams of each attack for the reader to have a clear image of what was simulated, and for the sake of completeness one attack that was not simulated.
+As stated in the introduction we specifically examined two attacks, the standard denial of sleep attack and the routing attack. Below are diagrams of what was simulated, and for the sake of completeness one attack that was not simulated.
 
 \begin{figure}[H]
 \caption{Standard Denial-of-Sleep Attack}
@@ -37,7 +37,7 @@ The first results came from running the standard denial of sleep attack on vario
 \input{batTable}
 \end{figure}
 
-In the table above ``B-type" represents the type of acid that was tested, ``TTC" represents the Time to Compromise (the time it takes to deplete all the energy from the sensor node), ``MTTC" is the mean time to compromise. The batteries that are highlighted in blue showed a marginally better resistance to the standard denial-of-sleep attack, while those in red were compromised far too quickly to be implemented and deployed as effective defenses. As the table plainly shows the Lithium-Ion battery was the most resistant to the standard denial-of-sleep attack. Below we show how the change in packet size affected the time to compromise of the Lithium-Ion battery to see how weight affects the time to compromise. 
+In the table above ``B-type" represents the type of acid that was tested, ``TTC" represents the time to compromise (the time it takes to deplete all the energy from the sensor node), ``MTTC" is the mean time to compromise. The batteries that are highlighted in blue showed a marginally better resistance to the standard denial-of-sleep attack, while those in red were compromised far too quickly to be implemented and deployed as effective defenses. As the table plainly shows the lithium-ion battery was the most resistant to the standard denial-of-sleep attack. Below we show how the change in packet size affected the time to compromise of the lithium-ion battery. 
 
 \begin{figure}[H]
 \caption{Time to Compromise for Battery Weights}
@@ -53,10 +53,11 @@ In our second simulation we tested the time to compromise a sensor node for two 
 \input{attackComp}
 \end{figure}
 
-From the table we noticed (not surprisingly) that the routing power draw attack compromised the sensor nodes much more  quickly than the standard denial-of-sleep attack. We also plotted linear regressions of the time to compromise for each type of attack as the packet size increases. As we expected from the table the routing power consumption attacks is simply a linear transformation upwards of the standard denial of sleep attack, meaning that the derivatives of the two types of attacks are equivalent. That said, the rate of change with respect to packet size may be equivalent, but the linear transformation upwards shows a strong indication that the routing power draw attack is more potent, and worthy of more consideration on the part of WSN employers. 
+From the table we noticed (not surprisingly) that the routing power draw attack compromised the sensor nodes much more  quickly than the standard denial-of-sleep attack. We also plotted linear regressions of the time to compromise for each type of attack as the packet size increases. As we expected from the table the routing power consumption attacks is simply a linear transformation upwards of the standard denial of sleep attack, meaning that the derivatives of the two types of attacks are equivalent. That said, the rate of change with respect to packet size may be equivalent but the linear transformation upwards shows a strong indication that the routing power draw attack is more potent and worthy of consideration on the part of WSN employers. 
 
 \begin{figure}[H]
 \caption{Attack Comparison Chart}
 \includegraphics[width=\linewidth]{Figures/pktszndtmtocmp1.pdf}
 \end{figure}
 	
+Because routing causes the target node to both transmit and receive simultaneously it is not surprising that routing can be a more effective power consumption attack. The simulation we used only examined a single target node. However, this attack could easily be easily extended using an algorithm that targets as many nodes as possible. It is important to note that the routing attack is entirely dependent on the individual protocols that WSN employers choose to implement. 
